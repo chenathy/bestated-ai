@@ -1,0 +1,194 @@
+.HomePage {
+    width: 100vw;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomePage hr {
+    width: 1200px;
+    border: 1.5px solid #4BBEDB;
+}
+
+.HomePage h2 {
+    text-align: left;
+}
+
+/* HomePage: Hero */
+
+
+
+/* HomePage: Numbers */
+
+.Numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    max-height: 236px;
+    max-width: 100vw;
+    top: 728px;
+    padding: 32px 318px 32px 318px;
+    gap: 160px ;
+}
+
+.Numbers .number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 162px;
+    height: 172px;
+    gap: 5px;
+    text-align: center;
+}
+
+.Numbers .number h1 {
+    width: 120px;
+    height: 63px;
+    font-family: 'Bricolage Grotesque'; 
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 63px;
+    color: #23395B;
+}
+
+.Numbers .number p{
+    width: 162px;
+    height: 51px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    text-align: center;
+    justify-content: center;
+    color: #141414;
+}
+
+
+/* HomePage: Wills */
+
+.Wills {
+    width: 1200px;
+    height: 1320px;
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.Wills .pic {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 260px;
+    left: 490px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+
+
+/* .box a {
+    width: 114px;
+    height: 26px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    size: 18px;
+    line-height: 25.2px;
+    color: #23395B;
+    margin-top: 10px;
+} */
+
+
+.HomePage .callout-box {
+    max-height: 585px;
+    background-color: #23395B;
+}
+
+.HomePage .callout-box .text-btn .group {
+    height: 212px;
+}
+
+.HomePage .callout-box .text-btn .group h2 {
+    height: 162;
+}
+
+
+.API {
+    width: 1200px;
+    max-height: 428px;
+    margin-top: 160px;
+    position: relative;
+    display: flex;
+}
+
+.image {
+
+    width: 528px;
+    height: 428px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.API .image img {
+    width: auto;
+    height: 117%;
+    display: flex;
+    position: relative;
+    top: -12px;
+    left: -31px;
+    border-radius: 8px; 
+}
+
+
+.API .text-btn {
+    width: 576px;
+    max-height: 423px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.API .text-btn .group {
+    width: 576px;
+    height: 212px;
+}
+
+.API .group p {
+    width: 576px;
+    height: 26px;
+}
+
+
+.API .group h2 {
+    width: 576px;
+    height: 162px;
+}
+
+
+.API p {
+    width: 576px;
+    height: 101px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #141414;
+}
+
+.API button {
+    height: 50px;
+}
+

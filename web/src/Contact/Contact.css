@@ -1,0 +1,73 @@
+.Contact {
+    width: 100vw;
+    background-color: #F5F5F5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .Form-section {
+    /* max-height: 1855px; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Contact .Form-section .form {
+    width: 627px;
+    /* max-height: 1630px; */
+    border-radius: 8px;
+    padding: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+}
+
+.form-form {
+    display: grid;
+    gap: 36px;
+}
+
+.form-group {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group .rs-form-control-label {
+    margin-bottom: 12px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+
+ .form-group span {
+    height: 26px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+.form-group Form {
+    gap: 12px;
+}
+
+
+#req {
+    color: #A13D63;
+    justify-content: center;
+}
+
+#optional {
+    font-weight: 400;
+}
+
+
+
+

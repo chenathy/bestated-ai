@@ -1,0 +1,48 @@
+.Financial {
+    width: 100vw;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Financial .How {
+    max-height: 1180px;
+    padding: 96px 120px 160px 120px;
+    
+}
+
+.Financial .How .intro {
+    max-height: 371px;
+}
+
+.Financial .How .intro p {
+    font-size: 24px;
+    line-height: 33.6px;
+    font-weight: 400;
+}
+
+.Financial .How .intro p span {
+    font-weight: 600;
+}
+
+.Financial .How .secondary p {
+    width: 576px;
+    height: 328px;
+
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+.Financial .How .secondary p span {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.Financial .CTA {
+    margin-top: 0px;
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+.Employers {
+    width: 100vw;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Employers hr {
+    width: 1200px;
+    border: 1.5px solid #4BBEDB;
+}
+
+.Employers h2 {
+    height: 54px;
+    font-family: 'Bricolage Grotesque'; 
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #23395B;
+    text-align: center;
+}
+
+/* Benefits */
+
+.Employers .Benefits {
+    max-height: 778px;
+    padding: 96px 120px 160px 120px;
+    gap: 96px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Benefits .benefits {
+    width: 1200px;
+    height: 372px;
+    gap: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Benefits .benefits .benefit {
+    width: 368px;
+    height: 340px;
+    border-radius: 8px;
+    /* padding:  32px 0 0 0; */
+    padding-top: 32px;
+    padding-left: 32px;
+    gap: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+}
+
+.benefit img {
+    width: 80px;
+    height: 62px;
+    margin-bottom: 32px;
+}
+
+.benefit .text {
+    width: 304px;
+    max-height: 202px;
+    gap: 16px;
+    display: grid;
+}
+
+
+.benefit .text h4 {
+    height: 34px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #23395B;
+}
+
+.benefit .text p {
+    width: 304px;
+    height: 152px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #141414;
+}
+
+
+/* How  */
+.Employers .How {
+    max-height: 1143px;
+    /* margin-top: 120px; */
+    padding: 160px 120px 160px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Employers .How .intro {
+    margin-left: 0px;
+    max-height: 270px;
+}
+
+.Employers .How .intro p {
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.Employers .How .intro p span {
+    font-weight: 700;
+}
+
+.Employers .callout-box {
+    max-height: 605px;
+    background-color: #A13D63;
+}
+
+.Employers .callout-box .text-btn .group {
+    height: 266px;
+}
+
+.Employers .callout-box h2 {
+    height: 216px;
+    text-align: left;
+}
