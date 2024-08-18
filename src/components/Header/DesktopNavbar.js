@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Button from '../Button';
 import logo from '../../assets/icons/logo-navy.svg';
 import './Header.css';
 
@@ -33,12 +34,11 @@ const DesktopNavbar = () => {
                         <li><Link to='/about'>About</Link></li>
 
                         <li>
-                            <button
+                            <Button 
+                                textDisplay='Get in contact'
                                 onClick={() => navigate('/contact')}
-                                className='contact-btn'
-                            >
-                                Get in contact
-                            </button>
+                                state='primary'
+                            />
                         </li>
 
                     </ul>

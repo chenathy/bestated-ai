@@ -14,6 +14,20 @@ body, html {
     width: 100%;
 }
 
+:root {
+    --CornerExtra-small: 4px; 
+
+    --navy: #23395B;
+    --mustard: #F1B23E;
+    --dark-mustard: #BE800E;
+    --gray-10: #F5F5F5;
+    --gray-25: #D5D6D7;
+    --gray-85: #5A5B5E;
+    --light-blue: #CCEDF5;
+    --black: #141414;
+
+}
+
 
 /* @media (min-width: 769px) {
     html, body {
