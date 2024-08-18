@@ -27,16 +27,19 @@
         text-decoration: underline;
     }
 
-    .button:active {
+    .primary:active {
         font-weight: 600;
+        background-color: var(--dark-mustard);
     }
 
-    .button:active .primary {
-        background-color: var(--gray-85);
-    }
 
     .secondary {
         background-color: var(--gray-25);
+    }
+
+    .secondary:active {
+        font-weight: 600;
+        background-color: var(--gray-85);
     }
 }
 
