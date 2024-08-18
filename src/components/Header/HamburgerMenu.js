@@ -36,9 +36,9 @@ const HamburgerIcon = () => {
 
     return (
         <Hamburger onClick={() => setIsOpen(!isOpen)}>
-        <Line isOpen={isOpen} />
-        <Line isOpen={isOpen} />
-        <Line isOpen={isOpen} />
+            <Line isOpen={isOpen} />
+            <Line isOpen={isOpen} />
+            <Line isOpen={isOpen} />
         </Hamburger>
     );
 };

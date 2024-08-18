@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import './styles/global.css';
 // import HomeMobile from './pages/mobile/HomeMobile';
 // import AboutMobile from './pages/mobile/AboutMobile';
 // import HomeDesktop from './pages/desktop/HomeDesktop';
@@ -26,7 +28,7 @@ const App = () => {
                     <Route path='/besated-org' element={<HomePage/>} />
                 </Routes> */}
 
-                {/* <Footer /> */}
+                <Footer />
 
             </Router>
         </div>

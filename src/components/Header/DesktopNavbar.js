@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/icons/logo.svg';
+import logo from '../../assets/icons/logo-navy.svg';
 import './Header.css';
 
 const DesktopNavbar = () => {
