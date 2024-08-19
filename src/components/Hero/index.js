@@ -19,10 +19,12 @@ const HeroComponent = ({h1Content, h4Content, heroLogo, contactBtn = true, about
     return (
         <div className='hero'>
             {isDesktop ? (<></>) : (
-                <img 
-                    src={heroLogo}
-                    alt='heroLogo'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={heroLogo}
+                        alt='heroLogo'
+                    />
+                </div>
             )}
 
             <div className='text-and-btn'>
