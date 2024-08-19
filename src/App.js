@@ -22,7 +22,7 @@ const App = () => {
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} />  */}
-                    <Route path='/besated-ai' element={<Home />} />
+                    <Route path='/bestated-ai' element={<Home />} />
                 </Routes>
 
                 <Footer />
