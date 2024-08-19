@@ -1,10 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import './Callout.css';
 import Button from '../Button';
 
 
 const CalloutBox = ({ label, title, p, logo, learnMoreBtn = true, contactBtn = true, ...props }) => {
+
+    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     const navigate = useNavigate();
     const handlePageNavigation= (page) => {
@@ -15,6 +18,16 @@ const CalloutBox = ({ label, title, p, logo, learnMoreBtn = true, contactBtn = t
 
     return (
         <div className='callout-box'>
+
+            {isDesktop ? (<></>) : (
+                <div className='img-container'>
+                    <img 
+                        src={logo} 
+                        alt='home-callout'
+                    />
+                </div>
+            )}
+
             <div className='text-and-btn'>
                 <div className='group'>
                     <p>{label}</p>
@@ -27,7 +40,6 @@ const CalloutBox = ({ label, title, p, logo, learnMoreBtn = true, contactBtn = t
                     <Button 
                         textDisplay='Learn more'
                         onClick={() => handlePageNavigation('employers')}
-                        state='secondary'
                     />
                 ) : (<></>)}
 
@@ -39,12 +51,14 @@ const CalloutBox = ({ label, title, p, logo, learnMoreBtn = true, contactBtn = t
                 ) : (<></>)}
             </div>
             
-            <div className='img-container'>
-                <img 
-                    src={logo} 
-                    alt='home-callout'
-                />
-            </div>
+            {isDesktop ? (
+                <div className='img-container'>
+                    <img 
+                        src={logo} 
+                        alt='home-callout'
+                    />
+                </div>
+            ) : (<></>)}
 
         </div>
     );
