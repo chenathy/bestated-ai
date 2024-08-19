@@ -12,7 +12,7 @@
         align-items: center; 
     }
 
-    hr {
+    .footer hr {
         width: 1200px;
         border: 2px solid var(--gray-25);
     }
