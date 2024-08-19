@@ -2,6 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import homeHero from '../../assets/images/hero-home.jpg';
+import InfoBoxes from '../../components/InfoBoxes';
 import './Home.css';
 
 
@@ -11,6 +12,8 @@ const Home = () => {
 
     return (
         <div className='home'>
+
+            {/* Hero */}
             <HeroComponent 
                 h1Content={'Help your employees avoid the painful probate process.'}
                 h4Content={'Bestated is the first employer-sponsored will, power of attorney, and medical directive platform.'}
@@ -21,6 +24,7 @@ const Home = () => {
 
             <hr/>
 
+            {/* Numbers  */}
             {isDesktop ? (
                 <div className='numbers'>
                     <div className='number'>
@@ -59,6 +63,29 @@ const Home = () => {
 
 
             <hr/>
+
+            {/* Info Boxes  */}
+            <InfoBoxes 
+                label1={'THE PROBLEM'}
+                title1={'Wills are complicated, expensive, and grim'}
+                p1={
+                    <p>
+                        Understandably, many avoid creating estate plans, wills, medical directives, and powers of attorney.
+                        <br/><br/>
+                        As a result, families are left unprepared if worse comes to worst and there is an unexpected tragedy.
+                    </p>
+                }
+                label2={'OUR SOLUTION'}
+                title2={'Employer-sponsored estate planning'}
+                p2={
+                    <p>
+                        Parental leave, disability, and life insurance were once novel employee benefits. We believe employer-sponsored estate planning documents should join them.
+                        <br/><br/>
+                        Bestated uses AI, Large Language Models (LLMs), and attorney partners to reduce costs and increase accessibility for these complex legal needs.
+                    </p>
+                }
+                contact={false}
+            />
 
         </div>
     );

@@ -111,7 +111,7 @@
 
     .footer hr {
         width: 100vw;
-        border: 2px solid var(--gray-25);
+        border: 1px solid var(--gray-25);
     }
 
     .footer .main {
