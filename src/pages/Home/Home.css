@@ -1,0 +1,131 @@
+
+.home {
+    background-color: #F5F5F5;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .home hr {
+        width: 1200px;
+        border: 1.5px solid var(--blue);
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        max-height: 236px;
+        /* max-width: 100vw; */
+        padding: 32px 318px 32px 318px;
+        gap: 160px ;
+    }
+
+    .numbers .number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 162px;
+        max-height: 172px;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .numbers .number h1 {
+        width: 120px;
+        height: 63px;
+        font-family: 'Bricolage Grotesque'; 
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 63px;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .numbers .number p{
+        width: 162px;
+        height: 51px;
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25.2px;
+        text-align: center;
+        justify-content: center;
+        color: var(--black);
+        margin: 0;
+    }
+
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .home hr {
+        width: 100vw;
+        border: 1px solid var(--blue);
+    }
+
+    .home .numbers {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-height: 198px;
+        padding: 48px 0 48px 0;
+        /* gap: 32px; */
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+    }
+
+    .numbers .number {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        display: grid;
+        align-items: center;
+        max-width: 85px;
+        max-height: 102px;
+        gap: 5px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: var(--black);
+    }
+
+    .numbers .number span {
+        height: 20px;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    .numbers .number h1 {
+        height: 20px;
+        font-family: 'Bricolage Grotesque';
+        font-weight: 600;
+        font-size: 28px;
+        color: var(--navy);
+        line-height: 31.5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .numbers .number p {
+        height: 40px;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+}

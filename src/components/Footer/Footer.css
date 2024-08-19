@@ -12,7 +12,7 @@
         align-items: center; 
     }
 
-    hr {
+    .footer hr {
         width: 1200px;
         border: 2px solid var(--gray-25);
     }
@@ -111,7 +111,7 @@
 
     .footer hr {
         width: 100vw;
-        border: 2px solid var(--gray-25);
+        border: 1px solid var(--gray-25);
     }
 
     .footer .main {
@@ -150,7 +150,7 @@
 
 
     .main .social {
-        max-width: 160px;
+        max-width: 200px;
         height: 25px;
         display: flex;
         align-items: center;
