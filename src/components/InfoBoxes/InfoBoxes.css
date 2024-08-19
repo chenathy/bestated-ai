@@ -172,7 +172,7 @@
     }
 
     .info .box h2 {
-        max-width: 231.5px;
+        max-width: 234px;
         height: 81px;
         font-family: 'Bricolage Grotesque';
         font-size: 24px;
@@ -180,6 +180,7 @@
         line-height: 27px;
         text-align: left;
         color: var(--navy);
+        margin-bottom: 0;
     }
 
     .info .box p {
