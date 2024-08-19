@@ -1,0 +1,88 @@
+/* Desktop */
+@media (min-width: 769px) {
+    .hero {
+        /* width: 1200px; */
+        max-height: 628px;
+        padding: 100px 120px 100px 120px;
+        gap: 96px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .text-and-btn {
+        width: 576px;
+        max-height: 471px;
+        gap: 32px;
+        font-weight: 400;
+
+        display: grid;
+        
+    }
+
+    .hero .text-and-btn h1 {
+        width: 576px;
+        max-height: 189px;
+        font-family: 'Bricolage Grotesque'; 
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        color: var(--navy); 
+        margin: 0;
+    }
+
+    .hero .text-and-btn h4 {
+        width: 576px;
+        max-height: 118px;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 39.2px;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .hero .text-and-btn p {
+        font-family: 'Public Sans';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 33.6px;
+        text-align: left;
+        color: var(--navy);
+    }
+
+    .hero .text-and-btn span {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .hero .text-and-btn .btn {
+        display: flex;
+        max-width: 360px;
+        height: 50px;
+        gap: 32px;
+    }
+
+    .hero .img-container {
+        width: 528px;
+        height: 428px;
+        overflow: hidden;
+        position: relative;
+        border-radius: var(--CornerSmall);
+    }
+
+    .hero .img-container img {
+        position: absolute;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+}

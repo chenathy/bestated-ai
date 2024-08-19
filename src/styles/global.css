@@ -16,6 +16,7 @@ body, html {
 
 :root {
     --CornerExtra-small: 4px; 
+    --CornerSmall: 8px;
 
     --navy: #23395B;
     --mustard: #F1B23E;
