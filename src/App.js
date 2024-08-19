@@ -4,10 +4,7 @@ import { isMobile } from 'react-device-detect';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './styles/global.css';
-// import HomeMobile from './pages/mobile/HomeMobile';
-// import AboutMobile from './pages/mobile/AboutMobile';
-// import HomeDesktop from './pages/desktop/HomeDesktop';
-// import AboutDesktop from './pages/desktop/AboutDesktop';
+import Home from './pages/Home';
 
 
 const App = () => {
@@ -18,15 +15,15 @@ const App = () => {
             <Router>
                 <Header />
 
-                {/* <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path='/employers' element={<ForEmployers/>} />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    {/* <Route path='/employers' element={<ForEmployers/>} />
                     <Route path='/professional-attorneys' element={<ForAttorneys/>} />
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} /> 
-                    <Route path='/besated-org' element={<HomePage/>} />
-                </Routes> */}
+                    <Route path='/besated-org' element={<HomePage/>} /> */}
+                </Routes>
 
                 <Footer />
 

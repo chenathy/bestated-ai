@@ -45,3 +45,50 @@
 
 
 
+/* Mobile */
+@media (max-width: 768px) {
+
+    .button{
+        max-width: 128px;
+        height: 43px;
+        padding: 10px 12px 10px 12px;
+        gap: 10px;
+        border: 0px;
+        border-radius: var(--CornerExtra-small);
+        color: var(--black);
+        font-family: 'Public Sans', sans-serif; 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .primary {
+        background-color: var(--mustard);
+    }
+
+    .secondary {
+        background-color: var(--gray-25);
+    }
+
+    .button:hover {
+        max-width: 136px;
+        height: 47px;
+        padding: 12px 14px 12px 14px;
+        gap: 10px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .primary:active {
+        width: 130px;
+        font-weight: 600;
+        background-color: var(--dark-mustard);
+    }
+
+    .secondary:active {
+        width: 130px;
+        font-weight: 600px;
+        background-color: var(--gray-85);
+    }
+
+}
