@@ -1,67 +1,12 @@
 /* Desktop */
 @media (min-width: 769px) {
     .hero {
-        /* width: 1200px; */
         max-height: 628px;
         padding: 100px 120px 100px 120px;
         gap: 96px;
 
         display: flex;
         justify-content: center;
-    }
-
-    .hero .text-and-btn {
-        width: 576px;
-        max-height: 471px;
-        gap: 32px;
-        font-weight: 400;
-
-        display: grid;
-        
-    }
-
-    .hero .text-and-btn h1 {
-        width: 576px;
-        max-height: 189px;
-        font-family: 'Bricolage Grotesque'; 
-        font-size: 54px;
-        font-weight: 600;
-        line-height: 63px;
-        text-align: left;
-        color: var(--navy); 
-        margin: 0;
-    }
-
-    .hero .text-and-btn h4 {
-        width: 576px;
-        max-height: 118px;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 39.2px;
-        color: var(--navy);
-        margin: 0;
-    }
-
-    .hero .text-and-btn p {
-        font-family: 'Public Sans';
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33.6px;
-        text-align: left;
-        color: var(--navy);
-    }
-
-    .hero .text-and-btn span {
-        font-weight: 600;
-        text-decoration: underline;
-    }
-
-    .hero .text-and-btn .btn {
-        display: flex;
-        max-width: 360px;
-        height: 50px;
-        gap: 32px;
     }
 
     .hero .img-container {
@@ -124,33 +69,4 @@
         padding: 0 20px 0 20px;
     }
 
-    /* .hero .text-and-btn h1 {
-        height: 95px;
-        font-family: 'Bricolage Grotesque';
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 31.5px;
-        color: var(--navy);
-    }
-
-    .hero .text-and-btn h4 {
-        height: 76px;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 400;
-        line-height: 25.2px;
-        font-size: 18px;
-        line-height: 25.2px;
-        color: var(--navy);
-    }
-
-    .hero .text-and-btn .btn {
-        max-height: 102px;
-        padding: 0 28.5px 0 28.5px;
-        gap: 16px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
 }

@@ -23,6 +23,17 @@
         margin: 0;
     }
 
+    .text-and-btn .group h1 {
+        width: 576px;
+        max-height: 189px;
+        font-family: 'Bricolage Grotesque'; 
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 63px;
+        color: var(--navy); 
+        margin: 0;
+    }
+
     .text-and-btn .group h2 {
         font-family: 'Bricolage Grotesque', sans-serif;
         font-weight: 600;
@@ -81,7 +92,7 @@
         font-family: 'Bricolage Grotesque';
         font-weight: 600;
         font-size: 30px;
-        line-height: 31.5px;
+        line-height: 33px;
         color: var(--navy);
         text-align: center;
         margin: 0;

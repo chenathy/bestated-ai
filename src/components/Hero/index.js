@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
-import Button from '../Button';
 import TextAndBtn from '../Text-and-Btn';
 import './Hero.css';
 
@@ -18,7 +17,9 @@ const HeroComponent = ({title, supportText, heroLogo, buttonsArray, ...props}) =
     }
 
     const titleFormatted = <h1>{title}</h1>
-    const supportTextFormatted = <p style={{color: `var(--navy)`, textAlign: 'center'}}>{supportText}</p>
+    const supportTextFormatted = <p style={{color: `var(--navy)`, textAlign: `${isDesktop ? 'left' : 'center' }`}}>
+        {supportText}
+    </p>
 
     return (
         <div className='hero'>
