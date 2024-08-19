@@ -3,9 +3,11 @@ import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import InfoBoxes from '../../components/InfoBoxes';
 import CalloutBox from '../../components/Callout';
+import TextAndBtn from '../../components/Text-and-Btn';
 
 import homeHero from '../../assets/images/home-hero.jpg';
 import homeCallout from '../../assets/images/home-callout.jpg';
+import homeBenefitAPI from '../../assets/images/home-api.jpg'; 
 import './Home.css';
 
 
@@ -99,6 +101,27 @@ const Home = () => {
                 logo={homeCallout}
                 contactBtn={false}
             />
+
+            {isDesktop ? (<hr/>) : (<></>)}
+
+            {/* Beneficiary API  */}
+            <div className='beneficiary-api'>
+                <div className='img-container'>
+                    <img 
+                        src={homeBenefitAPI}
+                        alt='home-benefit-api'
+                    />
+                </div>
+                <TextAndBtn 
+                    label={<label style={{color: `var(--berry)`}}>FINANCIAL ADVISORS AND ESTATE ATTORNEYS</label>}
+                    title={<h2 style={{color: `var(--navy)`}}>Our Beneficiary API will simplify the process of updating your will.</h2>}
+                    tilteColor={`var(--navy)`}
+                    passage={<p style={{color: `var(--navy)`}}>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>}
+                    buttons={[ {textDisplay: 'Learn more', onClickDestination: 'employers', state: 'secondary'} ]}
+                />
+            </div>
+
+            
 
         </div>
     );

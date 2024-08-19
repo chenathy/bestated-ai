@@ -136,7 +136,7 @@
         width: 100%;
         height: 3.5px;
         background-color: var(--navy);
-        border-radius: 2px;
+        border-radius: var(--CornerExtra-small);
     }
 
     .dropdown {
