@@ -4,6 +4,7 @@ import HeroComponent from '../../components/Hero';
 import InfoBoxes from '../../components/InfoBoxes';
 import CalloutBox from '../../components/Callout';
 import TextAndBtn from '../../components/Text-and-Btn';
+import CTA from '../../components/CTA';
 
 import homeHero from '../../assets/images/home-hero.jpg';
 import homeCallout from '../../assets/images/home-callout.jpg';
@@ -120,7 +121,13 @@ const Home = () => {
                     buttons={[ {textDisplay: 'Learn more', onClickDestination: 'employers', state: 'secondary'} ]}
                 />
             </div>
+            
 
+            {/* CTA  */}
+            <CTA 
+                h1Message={<h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1>}
+                buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
+            />
             
 
         </div>
