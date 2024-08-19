@@ -7,12 +7,16 @@
 .navbar-container {
     width: 100vw;
     background-color: var(--gray-10);
-    display: flex;
-    justify-content: center;
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
+
+    .navbar-container{
+        display: flex;
+        justify-content: center;
+    }
+
     .navbar {
         background-color: var(--gray-10);
         display: flex;
@@ -111,7 +115,6 @@
         align-items: center; 
         justify-content: space-between;
         height: 60px;
-        /* max-width: 360px; */
         margin-left: 10%;
         margin-right: 10%;
     }
