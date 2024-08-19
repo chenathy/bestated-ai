@@ -6,29 +6,33 @@
 
 .navbar-container {
     width: 100vw;
-    background-color: #F5F5F5;
+    background-color: var(--gray-10);
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
+
+    .navbar-container{
+        display: flex;
+        justify-content: center;
+    }
+
     .navbar {
-        background-color: #F5F5F5;
+        background-color: var(--gray-10);
         display: flex;
         align-items: center; 
         position: relative;
         justify-content: space-between;
         height: 100px;
-        width: 100vw;
+        width: 1200px;
     }
 
     .navbar .logo {
         width: 152.14px;
         height: 30px; 
-        margin-left: 120px;
     }
 
     .navbar .ul {
-        margin-right: 120px;
         max-width: 670px; 
         max-height: 50px;   
         width: 100%;
@@ -58,7 +62,7 @@
         height: 26;
         width: auto;
         display: block;
-        color: #23395B;
+        color: var(--navy);
         text-align: left; 
         padding: 14px 20px;
         text-decoration: none;
@@ -75,7 +79,8 @@
         width: 257px;
         height: 116px;
         position: absolute;
-        left: 60%;
+        top: 100px;
+        left: 57%;
         border-radius: 4px;
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
@@ -90,7 +95,7 @@
     }
 
     .dropdown li:hover {
-        background-color: #CCEDF5;
+        background-color: var(--light-blue);
     }
 
     .dropdown p {
@@ -105,12 +110,11 @@
 /* Mobile styles */
 @media (max-width: 768px) {
     .navbar {
-        background-color: #F5F5F5;
+        background-color: var(--gray-10);
         display: flex;
         align-items: center; 
         justify-content: space-between;
         height: 60px;
-        /* max-width: 360px; */
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -118,7 +122,7 @@
     .navbar .logo {
         width: 101.43px;
         height: 20px;
-        color: #23395B;
+        color: var(--navy);
     }
 
     .hamburger {
@@ -131,7 +135,7 @@
     .hamburger .line {
         width: 100%;
         height: 3.5px;
-        background-color: #23395B;
+        background-color: var(--navy);
         border-radius: 2px;
     }
 
@@ -144,7 +148,7 @@
         border-radius: 4px;
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
-        background-color: #F5F5F5;
+        background-color: var(--gray-10);
         display: grid;
         align-items: center;
         justify-content: space-between;
@@ -172,10 +176,10 @@
         text-align: end;
         text-decoration: none;
         display: block;
-        color: #23395B;
+        color: var(--navy);
     }
 
     .dropdown li:active {
-        background-color: #CCEDF5;
+        background-color: var(--light-blue);
     }
 }

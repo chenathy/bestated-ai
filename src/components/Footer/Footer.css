@@ -7,7 +7,7 @@
         width: 100vw;
         height: 396px;
         text-align: center;
-        background-color: #23395B;
+        background-color: var(--navy);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,8 +16,7 @@
 
     hr {
         width: 1200px;
-        border-width: 2px;
-        background-color: #23395B;
+        border: 2px solid var(--gray-25);
     }
 
     .main {
@@ -48,7 +47,7 @@
     .menu p {
         max-width: 190px;
         height: 26px;
-        color: #FFFFFF;
+        color: var(--white);
         font-family: 'Public Sans', sans-serif;
         font-weight: 600;
         font-size: 18px;
@@ -74,7 +73,7 @@
     .copyright {
         width: 100%;
         height: 86px;
-        background-color: #F5F5F5;
+        background-color: var(--gray-10);
         gap: 50px;
         display: flex;
         align-items: center;
@@ -85,7 +84,7 @@
     .copyright p {
         max-width: 271px;
         height: 26px;
-        color: #141414;
+        color: var(--black);
         font-family: 'Public Sans', sans-serif; 
         font-weight: 400;
         font-size: 18px;
@@ -98,7 +97,7 @@
 /* Mobile */
 @media (max-width: 768px) {
     .footer{
-        background-color: #23395B;
+        background-color: var(--navy);
         max-height: 687px;
         padding: 48px 89px 48px 89px;
         gap: 10px;
@@ -114,7 +113,7 @@
 
     .footer hr {
         width: 100vw;
-        border: 2px solid #D5D6D7
+        border: 2px solid var(--gray-25);
     }
 
     .footer .main {
@@ -144,7 +143,7 @@
 
     .main .menu p {
         height: 23px;
-        color: #FFFFFF;
+        color: var(--white);
         font-family: 'Public Sans', sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -165,7 +164,7 @@
         max-height: 213px;
         padding: 48px 59px 48px 59px;
         gap: 24px;
-        background-color: #F5F5F5;
+        background-color: var(--gray-10);
 
         display: grid;
         align-items: center;
@@ -177,7 +176,7 @@
     .copyright p {
         height: 23px;
         margin-top: 10px;
-        color: #141414;
+        color: var(--black);
         font-family: 'Public Sans', sans-serif; 
         font-weight: 400;
         font-size: 16px;
