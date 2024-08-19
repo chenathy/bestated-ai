@@ -29,7 +29,7 @@ const InfoBoxes = ({ label1, label2, title1, title2, p1, p2, learnMore = true, c
                         We partner with our attorneys in a revenue share by which you receive a flat percentage of the fee from each new customer. 
                         Reach out to learn more!
                     </p> */}
-                    <p>{p1}</p>
+                    {p1}
 
                     {learnMore ? (
                         <p 
@@ -68,7 +68,7 @@ const InfoBoxes = ({ label1, label2, title1, title2, p1, p2, learnMore = true, c
                         <br/><br/>
                         If you are an attorney outside of these states and are interested in helping us expand to your state, please don’t hesitate to reach out!
                     </p> */}
-                    <p>{p2}</p>
+                    {p2}
                     {/* <a href='temp'>Learn more &gt;</a> */}
 
                     {learnMore ? (

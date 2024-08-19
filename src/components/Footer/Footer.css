@@ -14,7 +14,7 @@
 
     .footer hr {
         width: 1200px;
-        border: 2px solid var(--gray-25);
+        border: 1.5px solid var(--gray-25);
     }
 
     .main {

@@ -1,8 +1,11 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
-import homeHero from '../../assets/images/hero-home.jpg';
 import InfoBoxes from '../../components/InfoBoxes';
+import CalloutBox from '../../components/Callout';
+
+import homeHero from '../../assets/images/home-hero.jpg';
+import homeCallout from '../../assets/images/home-callout.jpg';
 import './Home.css';
 
 
@@ -85,6 +88,16 @@ const Home = () => {
                     </p>
                 }
                 contact={false}
+            />
+
+
+            {/* Callout Box  */}
+            <CalloutBox 
+                label='BENEFIT TO EMPLOYERS'
+                title='A unique benefit to attract and retain top talent'
+                p={<p>Employer-sponsored wills provide your employees and their families with peace of mind, while keeping you competitive in today’s recruitment landscape.</p>}
+                logo={homeCallout}
+                contactBtn={false}
             />
 
         </div>
