@@ -21,11 +21,13 @@ const Home = () => {
 
             {/* Hero */}
             <HeroComponent 
-                h1Content={'Help your employees avoid the painful probate process.'}
-                h4Content={'Bestated is the first employer-sponsored will, power of attorney, and medical directive platform.'}
+                title={'Help your employees avoid the painful probate process.'}
+                supportText={'Bestated is the first employer-sponsored will, power of attorney, and medical directive platform.'}
                 heroLogo={homeHero}
-                contactBtn={true}
-                aboutBtn={true}
+                buttonsArray={[
+                    {textDisplay: 'Get in contact', destinationPage: 'contact', state: 'primary'},
+                    {textDisplay: 'About us', destinationPage: 'about', state: 'secondary'}
+                ]}
             />
 
             <hr/>
@@ -118,7 +120,7 @@ const Home = () => {
                     title={<h2 style={{color: `var(--navy)`}}>Our Beneficiary API will simplify the process of updating your will.</h2>}
                     tilteColor={`var(--navy)`}
                     passage={<p style={{color: `var(--navy)`}}>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>}
-                    buttons={[ {textDisplay: 'Learn more', onClickDestination: 'employers', state: 'secondary'} ]}
+                    buttons={[ {textDisplay: 'Learn more', destinationPage: 'employers', state: 'secondary'} ]}
                 />
             </div>
             

@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 import Button from '../Button';
 import './Text-and-Btn.css';
-import { useReducer, useRef } from 'react';
 
 
 const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
-
-    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     const navigate = useNavigate();
     const handlePageNavigation= (page) => {
@@ -25,7 +21,7 @@ const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
                     {buttonsArray.map((button, index) => (
                         <Button key={index} 
                             textDisplay={button.textDisplay}
-                            onClick={() => handlePageNavigation(button.onClickDestination)}
+                            onClick={() => handlePageNavigation(button.destinationPage)}
                             state={button.state}
                         />
                     ))}
