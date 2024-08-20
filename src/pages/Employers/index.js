@@ -2,7 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 
-import employersHero from '../../assets/icons/employers-hero.jpg';
+import employersHero from '../../assets/images/employers-hero.jpg';
 import './Employers.css';
 
 
@@ -11,12 +11,14 @@ const ForEmployers = () => {
         <div className='employers'>
             {/* Hero  */}
             <HeroComponent 
-                h1Content={'Help your employees avoid the painful probate process.'}
-                h4Content={'Bestated is the first employer-sponsored will, power of attorney, and medical directive platform.'}
-                heroLogo={homeHero}
+                h1Content={'Protect your employees if the worst comes to be.'}
+                h4Content={'With Bestated, add employer-sponsored wills to your benefits package.'}
+                heroLogo={employersHero}
                 contactBtn={true}
                 aboutBtn={false}
             />
+
+            
 
         </div>
     );
