@@ -1,0 +1,10 @@
+.employers {
+    background-color: var(--gray-10);
+}
+
+/* Desktop */
+@media (min-width: 769px) {}
+
+
+/* Mobile */
+@media (max-width: 768px) {}

@@ -14,7 +14,6 @@
         width: 576px;
         max-height: 471px;
         gap: 32px;
-        font-weight: 400;
 
         display: grid;
         
@@ -87,7 +86,7 @@
 
     .hero {
         /* width: 300px; */
-        max-height: 585px;
+        /* max-height: 585px; */
         gap: 32px;
         padding-top: 32px;
         margin-left: 8.33%;
@@ -103,7 +102,7 @@
 
     .hero .img-container {
         width: 100%;
-        height: 200px;
+        height: 250px;
         overflow: hidden;
         position: relative;
         top: 0;
@@ -113,29 +112,34 @@
 
     .hero .img-container img {
         position: absolute;
-        top: -180px;
-        left: 0;
+        top: -150px;
+        left: 0px;
         width: 100%;
         height: auto;
     }
 
     .hero .text-and-btn {
         /* width: 100%; */
+        display: grid;
+        align-items: center;
+        justify-content: center;
         gap: 32px;
         text-align: center;
     }
 
     .hero .text-and-btn h1 {
-        /* width: 300px; */
+        width: 300px;
         height: 95px;
         font-family: 'Bricolage Grotesque';
         font-weight: 600;
         font-size: 28px;
         line-height: 31.5px;
         color: var(--navy);
+        margin: 0;
     }
 
     .hero .text-and-btn h4 {
+        width: 300px;
         height: 76px;
         font-family: 'Public Sans', sans-serif;
         font-weight: 400;
@@ -143,6 +147,7 @@
         font-size: 18px;
         line-height: 25.2px;
         color: var(--navy);
+        margin: 0;
     }
 
     .hero .text-and-btn .btn {

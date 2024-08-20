@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './styles/global.css';
 import Home from './pages/Home';
+import ForEmployers from './pages/Employers';
 
 
 const App = () => {
@@ -17,8 +18,8 @@ const App = () => {
 
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    {/* <Route path='/employers' element={<ForEmployers/>} />
-                    <Route path='/professional-attorneys' element={<ForAttorneys/>} />
+                    <Route path='/employers' element={<ForEmployers/>} />
+                    {/* <Route path='/professional-attorneys' element={<ForAttorneys/>} />
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
                     <Route path='/about' element={<About />} />
                     <Route path='/contact' element={<Contact />} />  */}
