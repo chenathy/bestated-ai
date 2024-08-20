@@ -1,14 +1,14 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
+import HowComponent from '../../components/How';
 
 import employersHero from '../../assets/images/employers-hero.jpg';
-
+import employersHow from '../../assets/images/employers-how.jpg';
 import AttractIcon from '../../assets/icons/Attract.svg';
 import LoyaltyIcon from '../../assets/icons/Loyalty.svg';
 import ProductivityIcon from '../../assets/icons/Productivity.svg';
 import './Employers.css';
-import { isDesktop } from 'react-device-detect';
 
 
 const ForEmployers = () => {
@@ -77,6 +77,23 @@ const ForEmployers = () => {
 
                 </div>
             </div>
+
+            <hr/>
+
+            {/* How  */}
+            <HowComponent 
+                introTitle='How employer-sponsored wills work'
+                introText='Bestated is a two-sided marketplace utilizing generative AI and Large Language Models (LLMs) to draft estate planning documents 
+                    such as wills, power of attorney, and medical directives that then get sent to our attorney partners for final touches and notarization.'
+                howLogo={employersHow}
+                secondaryTitle='Here’s how it works:'
+                step1='During their onboarding, your employee fills out a Bestated intake form.'
+                step2='Using this form, our team utilizes state-of-the-art generative AI and Large Language Models (LLMs) 
+                        to create drafts of their documents: wills, POAs, and medical directives.'
+                step3='We then send the documents to a Bestated attorney partner in your employee’s state.'
+                step4='Our attorney finalizes and notarizes it, Bestated signs off, 
+                        and copies are sent out to employees and their beneficiaries.'
+            />
             
 
         </div>
