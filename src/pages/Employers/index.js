@@ -8,9 +8,12 @@ import AttractIcon from '../../assets/icons/Attract.svg';
 import LoyaltyIcon from '../../assets/icons/Loyalty.svg';
 import ProductivityIcon from '../../assets/icons/Productivity.svg';
 import './Employers.css';
+import { isDesktop } from 'react-device-detect';
 
 
 const ForEmployers = () => {
+
+    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     return (
         <div className='employers'>
@@ -24,6 +27,7 @@ const ForEmployers = () => {
             />
 
             {/* Benefits for Employers */}
+            {isDesktop ? <></> : <hr/>}
             <div className='benefits-container'>
                 <h2>Why consider employer-sponsored wills?</h2>
 
