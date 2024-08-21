@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import CalloutBox from '../../components/Callout';
+import CTA from '../../components/CTA';
 
 import employersHero from '../../assets/images/employers-hero.jpg';
 import employersHow from '../../assets/images/employers-how.jpg';
@@ -104,6 +105,12 @@ const ForEmployers = () => {
                 p={<p>'Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!'</p>}
                 logo={employersCallout}
                 learnMoreBtn={false}
+            />
+
+            {/* CTA  */}
+            <CTA 
+                h1Message={<h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1>}
+                buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />
             
 
