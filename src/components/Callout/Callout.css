@@ -62,6 +62,10 @@
         margin: 0;
     }
 
+    .callout-box .text-and-btn .button {
+        height: 50px;
+    }
+
     .callout-box .img-container {
         width: 528px;
         height: 427px;
