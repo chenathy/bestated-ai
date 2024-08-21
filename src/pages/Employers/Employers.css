@@ -14,7 +14,7 @@
 
     .employers hr {
         width: 1200px;
-        border: 1.5px solid var(--blue);
+        border: 2px solid var(--blue);
     }
 
     .employers h2 {
@@ -92,6 +92,28 @@
         margin: 0;
     }
 
+    .employers .how {
+        max-height: 1143px;
+        padding: 160px 120px 160px 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .employers .how .intro {
+        margin-left: 0px;
+        max-height: 270px;
+    }
+
+    .employers .how .intro p {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+
+    .employers .how .intro p span {
+        font-weight: 700;
+    }
+
 }
 
 
@@ -118,6 +140,7 @@
     .employers .benefits-container {
         height: 1121.43px;
         margin-top: 96px;
+        margin-bottom: 96px;
         margin-left: 8.33%;
         margin-right: 8.33%;
         gap: 48px;

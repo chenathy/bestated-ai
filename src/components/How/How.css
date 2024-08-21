@@ -1,0 +1,224 @@
+/* Desktop */
+@media (min-width: 769px) {
+    .how {
+        gap: 96px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .how .intro {
+        width: 1050px;
+        margin-left: 120px;
+        gap: 48px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .how .intro h2 {
+        height: 54px;
+        font-family: 'Bricolage Grotesque'; 
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 54px;
+        color: var(--navy);
+        text-align: center;
+    }
+    
+    
+    .how .intro p {
+        width: 1000px;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .how .intro p span {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .how .secondary {
+        max-width: 1200px;
+        max-height: 457px;
+        gap: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: transparent;
+    }
+
+    .how .secondary .img-container {
+        width: 528px;
+        height: 457px;
+        border-radius: var(--CornerSmall);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .how .secondary .img-container img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        transform: scaleX(-1);
+    }
+    
+    .how .secondary .steps{
+        width: 576px;
+        max-height: 397px;
+        gap: 32px;
+        display: grid;
+        align-items: center;
+    }
+    
+    .how .steps h3 {
+        height: 40px;
+        font-family: 'Public Sans', sans-serif; 
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 39.2px;
+        color: var(--navy);
+        text-align: left;
+        margin: 0;
+    }
+    
+    .how .steps .step {
+        width: 576px;
+        max-height: 76px;
+        gap: 24px;
+        display: flex;
+    }
+    
+    .how .steps .step img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .how .steps .step p {
+        width: 518px;
+        font-family: 'Public Sans', sans-serif; 
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        color: var(--black);
+        text-align: left;
+        margin: 0;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .how{
+        padding: 96px 0 96px 0;
+        gap: 64px;
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how .intro {
+        gap: 24px;
+        display: grid;
+    }
+
+    .how .intro h2 {
+        width: 305px;
+        height: 54px;
+        font-family: 'Bricolage Grotesque'; 
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .how .intro p {
+        width: 300px;
+        max-height: 261px;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .how .intro p span {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 600px;
+    }
+
+    .how .secondary {
+        width: 300px;
+        gap: 48px;
+        display: grid;
+        background-color: transparent;
+    }
+
+    .how .secondary .img-container {
+        width: 300px;
+        height: 260px;
+        border-radius: var(--CornerSmall);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .how .secondary .img-container img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        transform: scaleX(-1);
+    }
+
+    .how .secondary .steps{
+        width: 300px;
+        gap: 24px;
+        display: grid;
+        align-items: center;
+    }
+
+    .how .steps h3 {
+        height: 26px;
+        font-family: 'Public Sans', sans-serif; 
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        color: var(--navy);
+        text-align: left;
+        margin: 0;
+    }
+
+    .how .steps .step {
+        width: 300px;
+        gap: 24px;
+        display: flex;
+    }
+
+    .how .steps .step img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .how .steps .step p {
+        width: 246px;
+        font-family: 'Public Sans', sans-serif; 
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: var(--black);
+        text-align: left;
+        margin: 0;
+    }
+
+}
