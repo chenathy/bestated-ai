@@ -147,7 +147,7 @@
         position: absolute;
         right: 0px;
         top: 60px;
-        border-radius: 4px;
+        border-radius: var(--CornerExtra-small);
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
         background-color: var(--gray-10);
