@@ -87,6 +87,10 @@
         width: auto;
     }
 
+    .home .callout-box {
+        background-color: var(--navy);
+    }
+
 
 }
 
@@ -184,5 +188,9 @@
         left: -50px;
         height: 100%;
         width: auto;
+    }
+
+    .home .callout-box {
+        background-color: var(--navy);
     }
 }
