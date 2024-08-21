@@ -68,8 +68,6 @@
         overflow: hidden;
         position: relative;
         border-radius: var(--CornerSmall);
-
-        border: 1px dashed black;
     }
 
     .hero .img-container img {

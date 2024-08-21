@@ -60,10 +60,14 @@
     }
     
     .how .secondary .img-container img {
-        position: absolute;
-        width: 100%;
-        height: auto;
         transform: scaleX(-1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
     }
     
     .how .secondary .steps{
@@ -175,11 +179,12 @@
 
     .how .secondary .img-container img {
         position: absolute;
-        left: 0px;
-        top: 0px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
         width: 100%;
-        height: auto;
-        transform: scaleX(-1);
+        min-height: 100%;
+        object-fit: cover;
     }
 
     .how .secondary .steps{
