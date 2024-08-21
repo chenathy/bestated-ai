@@ -5,7 +5,6 @@
 
     .callout-box { 
         max-height: 585px;
-        background-color: var(--navy);
         border-radius: var(--CornerSmall);
         padding: 64px;
         gap: 64px;
@@ -18,17 +17,17 @@
 
     .callout-box .text-and-btn {
         width: 480px;
-        max-height: 457px;
         gap: 32px;
         text-align: left;
         display: grid;
+        justify-content: space-between;
     }
 
     .callout-box .text-and-btn .group {
         width: 480px;
-        height: 212px;
         display: grid;
         gap: 26px;
+
     }
 
     .callout-box .text-and-btn .group p {
@@ -55,7 +54,6 @@
 
     .callout-box .text-and-btn p{
         width: 480px;
-        height: 135px;
         font-family: 'Public Sans', sans-serif;
         font-weight: 400;
         font-size: 24px;
@@ -88,7 +86,6 @@
 
     .callout-box { 
         max-height: 745px;
-        background-color: var(--navy);
         padding: 64px 32px 64px 32px;
         gap: 48px;
         
@@ -139,6 +136,7 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+        color: var(--white);
     }
 
     .callout-box .text-and-btn .group p {
@@ -149,6 +147,7 @@
         line-height: 19.6px;
         letter-spacing: 0.03em;
         margin: 0;
+        color: var(--white);
     }
 
     .callout-box .text-and-btn .group h2 {
@@ -159,6 +158,7 @@
         font-weight: 600;
         line-height: 27px;
         margin: 0;
+        color: var(--white);
     }
 
     .callout-box .text-and-btn p {

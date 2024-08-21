@@ -2,9 +2,12 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
+import CalloutBox from '../../components/Callout';
+import CTA from '../../components/CTA';
 
 import employersHero from '../../assets/images/employers-hero.jpg';
 import employersHow from '../../assets/images/employers-how.jpg';
+import employersCallout from '../../assets/images/employers-callout.png';
 import AttractIcon from '../../assets/icons/Attract.svg';
 import LoyaltyIcon from '../../assets/icons/Loyalty.svg';
 import ProductivityIcon from '../../assets/icons/Productivity.svg';
@@ -93,6 +96,21 @@ const ForEmployers = () => {
                 step3='We then send the documents to a Bestated attorney partner in your employee’s state.'
                 step4='Our attorney finalizes and notarizes it, Bestated signs off, 
                         and copies are sent out to employees and their beneficiaries.'
+            />
+
+            {/* Callout Box  */}
+            <CalloutBox 
+                label='FOR INDIVIDUALS'           
+                title='Not an employer, but interested in employer-sponsored wills?'
+                p={<p>'Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!'</p>}
+                logo={employersCallout}
+                learnMoreBtn={false}
+            />
+
+            {/* CTA  */}
+            <CTA 
+                h1Message={<h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1>}
+                buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />
             
 
