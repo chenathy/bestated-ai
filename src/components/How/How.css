@@ -23,6 +23,7 @@
         line-height: 54px;
         color: var(--navy);
         text-align: center;
+        margin: 0;
     }
     
     
@@ -31,6 +32,7 @@
         font-family: 'Public Sans', sans-serif;
         font-weight: 400;
         text-align: left;
+        margin: 0;
     }
     
     .how .intro p span {

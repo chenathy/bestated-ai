@@ -1,0 +1,48 @@
+.attorneys {
+    background-color: var(--gray-10);
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .attorneys .how {
+        /* max-height: 1172px; */
+        margin: 96px 120px 160px 120px;
+
+        display: grid;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        
+    }
+
+    .attorneys .how .intro {
+        position: relative;
+        left: 0px;
+
+        border: 1px black dashed;
+    }
+
+
+
+    .attorneys .how .intro p {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+
+    .attorneys .how .intro p {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+
+    .attorneys .how .intro p br {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+ 
+}
