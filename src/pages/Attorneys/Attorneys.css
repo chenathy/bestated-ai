@@ -24,13 +24,14 @@
         line-height: 33.6px;
     } 
 
+
+    .attorneys .info {
+        min-height: 510px;
+    }
 }
 
 
 /* Mobile */
 @media (max-width: 768px) {
-
-    .attorneys .how {
-    }
  
 }
