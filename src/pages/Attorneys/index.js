@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import InfoBoxes from '../../components/InfoBoxes';
@@ -11,6 +12,8 @@ import './Attorneys.css';
 
 const ForAttorneys = () => {
 
+    const isDesktop = useMediaQuery({ minWidth: 768 });
+
     return (
         <div className='attorneys'>
             
@@ -22,6 +25,8 @@ const ForAttorneys = () => {
                 contactBtn={true}
                 aboutBtn={false}
             />
+
+            {isDesktop ? <></> : <hr/>}
 
             {/* How  */}
             <HowComponent 
@@ -63,6 +68,8 @@ const ForAttorneys = () => {
                 contact={false}
             />
 
+            {isDesktop ? <></> : <hr/>}
+            
             {/* CTA  */}
             <CTA 
                 h1Message={<h1>Ready to join Bestated<br/>and expand your business?</h1> }

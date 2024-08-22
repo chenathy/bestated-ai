@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import ForEmployers from './pages/Employers';
 import ForAttorneys from './pages/Attorneys';
 import ForFinancialAdvisors from './pages/FinancialAdvisors';
+import About from './pages/About';
 
 
 const App = () => {
@@ -23,8 +24,8 @@ const App = () => {
                     <Route path='/employers' element={<ForEmployers/>} />
                     <Route path='/professional-attorneys' element={<ForAttorneys/>} />
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
-                    {/* <Route path='/about' element={<About />} />
-                    <Route path='/contact' element={<Contact />} />  */}
+                    <Route path='/about' element={<About />} />
+                    {/* <Route path='/contact' element={<Contact />} />  */}
                     <Route path='/bestated-ai' element={<Home />} />
                 </Routes>
 
