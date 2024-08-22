@@ -9,6 +9,36 @@
         width: 1200px;
         border: 2px solid var(--blue);
     }
+
+    .financial-advisors .how {
+        padding: 96px 120px 0 120px;
+        gap: 96px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .financial-advisors .how .intro {
+        max-height: 371px;
+    }
+
+    .financial-advisors .how .intro p {
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+
+    .financial-advisors .how .intro p span {
+        font-weight: 600;
+    }
+
+    .financial-advisors .how .secondary .steps {
+        gap: 24px;
+    }
+    .financial-advisors .how .secondary p {
+        width: 576px;
+    }
+
+
 }
 
 
@@ -18,5 +48,21 @@
     .financial-advisors hr {
         width: 100vw;
         border: 1px solid var(--blue);
+    }
+
+    .financial-advisors .intro h2 {
+        width: 300px;
+    }
+
+    .financial-advisors .secondary .step p{
+        font-size: 16px;
+        font-weight: 400;
+        width: 300px;
+    }
+
+    .financial-advisors .secondary .step span {
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
     }
 }

@@ -71,7 +71,7 @@
     
     .how .secondary .steps{
         width: 576px;
-        max-height: 397px;
+        max-height: 400px;
         gap: 32px;
         display: grid;
         align-items: center;
@@ -109,6 +109,10 @@
         color: var(--black);
         text-align: left;
         margin: 0;
+    }
+
+    .how .steps .step p span {
+        font-weight: 600;
     }
 
 }

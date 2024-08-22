@@ -89,6 +89,7 @@ const ForEmployers = () => {
                 introText='Bestated is a two-sided marketplace utilizing generative AI and Large Language Models (LLMs) to draft estate planning documents 
                     such as wills, power of attorney, and medical directives that then get sent to our attorney partners for final touches and notarization.'
                 howLogo={employersHow}
+                introLinkText={`Let's get started >`}
                 secondaryTitle='Here’s how it works:'
                 step1='During their onboarding, your employee fills out a Bestated intake form.'
                 step2='Using this form, our team utilizes state-of-the-art generative AI and Large Language Models (LLMs) 

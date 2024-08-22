@@ -6,7 +6,7 @@ import Step4Icon from '../../assets/icons/FourInCircle.svg';
 import './How.css';
 
 
-const SecondaryComponent = ({howLogo, title, step1, step2, step3, step4, ...props}) => {
+const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3, step4, ...props}) => {
 
     return (
         <div className='secondary'>
@@ -16,37 +16,46 @@ const SecondaryComponent = ({howLogo, title, step1, step2, step3, step4, ...prop
                     alt='howLogo'
                 />
             </div>
+
             <div className='steps'>
                 <h3>{title}</h3>
                 <div className='step'>
-                    <img
-                        src={Step1Icon}
-                        alt='Step1'
-                    />
+                    {stepLogo ? (
+                        <img
+                            src={Step1Icon}
+                            alt='Step1'
+                        />
+                    ) : <></> }
                     <p>{step1}</p>
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step2Icon}
-                        alt='Step2'
-                    />
+                    {stepLogo ? (
+                        <img
+                            src={Step2Icon}
+                            alt='Step2'
+                        />
+                    ) : <></> }
                     <p>{step2}</p>
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step3Icon}
-                        alt='Step3'
-                    />
+                    {stepLogo ? (
+                        <img
+                            src={Step3Icon}
+                            alt='Step3'
+                        />
+                    ) : <></> }
                     <p>{step3}</p>
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step4Icon}
-                        alt='Step4'
-                    />
+                    {stepLogo ? (
+                        <img
+                            src={Step4Icon}
+                            alt='Step4'
+                        />
+                    ) : <></> }
                     <p>{step4}</p>
                 </div>
 

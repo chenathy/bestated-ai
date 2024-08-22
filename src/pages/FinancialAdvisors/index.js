@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery } from 'rsuite/esm/useMediaQuery/useMediaQuery';
+import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import CTA from '../../components/CTA';
@@ -25,8 +25,7 @@ const ForFinancialAdvisors = () => {
                 aboutBtn={false}
             />
 
-            {/* {isDesktop ? <></> : <hr/>} */}
-            <hr/>
+            {! isDesktop ? <hr/> : <></>}
 
             {/* How */}
             <HowComponent
@@ -36,8 +35,9 @@ const ForFinancialAdvisors = () => {
                     <br/><br/>
                     Say goodbye to manual updates and streamline your workflow effortlessly. 
                     Take back your administrative staff’s time from endless updates today. `}
-
+                introLinkText='Get in contact with our team! >'
                 howLogo={financialAdvisorHow}
+                secondaryStepLogo={false}
                 secondaryTitle='Here’s how it works:'
                 step1={`Often, after a beneficiary is updated, there isn't formal communication with financial institutions 
                         responsible for payable on death (POD) or transferable on death (TOD) execution.`}
