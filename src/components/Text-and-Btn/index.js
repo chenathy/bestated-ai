@@ -26,7 +26,7 @@ const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
                         <Button key={index} 
                             textDisplay={button.textDisplay}
                             onClick={() => handlePageNavigation(button.onClickDestination)}
-                            state={button.state}
+                            state={button.state ? button.state : 'primary'}
                         />
                     ))}
                 </div>
