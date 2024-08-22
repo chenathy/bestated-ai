@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './How.css';
 
 
-const IntroComponent = ({title, text}) => {
+const IntroComponent = ({title, text, textDisplayInLink }) => {
 
     const navigate = useNavigate();
     const handlePageNavigation= (page) => {
@@ -28,7 +28,7 @@ const IntroComponent = ({title, text}) => {
                 <br/> <br/>
                 <span 
                     onClick={() => handlePageNavigation('contact')}
-                >Let’s get started &gt;
+                >{textDisplayInLink}
                 </span>
             </p>
         </div>

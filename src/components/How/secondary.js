@@ -6,7 +6,11 @@ import Step4Icon from '../../assets/icons/FourInCircle.svg';
 import './How.css';
 
 
-const SecondaryComponent = ({howLogo, title, step1, step2, step3, step4, ...props}) => {
+const SecondaryComponent = ({howLogo, title, stepLogo=true, step1Html, step2Html, step3Html, step4Html, ...props}) => {
+
+    // const detectSpan = /(<span.*?>.*?<\/span>)/gi;
+    // const spanPartSplit = props.step4.split(detectSpan).filter(Boolean)
+    // const spanMatch = props.step4.match(detectSpan);
 
     return (
         <div className='secondary'>
@@ -16,38 +20,47 @@ const SecondaryComponent = ({howLogo, title, step1, step2, step3, step4, ...prop
                     alt='howLogo'
                 />
             </div>
+
             <div className='steps'>
                 <h3>{title}</h3>
                 <div className='step'>
-                    <img
-                        src={Step1Icon}
-                        alt='Step1'
-                    />
-                    <p>{step1}</p>
+                    {stepLogo ? (
+                        <img
+                            src={Step1Icon}
+                            alt='Step1'
+                        />
+                    ) : <></> }
+                    {step1Html}
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step2Icon}
-                        alt='Step2'
-                    />
-                    <p>{step2}</p>
+                    {stepLogo ? (
+                        <img
+                            src={Step2Icon}
+                            alt='Step2'
+                        />
+                    ) : <></> }
+                    {step2Html}
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step3Icon}
-                        alt='Step3'
-                    />
-                    <p>{step3}</p>
+                    {stepLogo ? (
+                        <img
+                            src={Step3Icon}
+                            alt='Step3'
+                        />
+                    ) : <></> }
+                    {step3Html}
                 </div>
 
                 <div className='step'>
-                    <img
-                        src={Step4Icon}
-                        alt='Step4'
-                    />
-                    <p>{step4}</p>
+                    {stepLogo ? (
+                        <img
+                            src={Step4Icon}
+                            alt='Step4'
+                        />
+                    ) : <></> }
+                    {step4Html}
                 </div>
 
             </div>

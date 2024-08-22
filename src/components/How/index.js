@@ -4,20 +4,22 @@ import IntroComponent from './intro';
 import SecondaryComponent from './secondary';
 
 
-const HowComponent = ({introTitle, introText, howLogo, secondaryTitle, ...props}) => {
+const HowComponent = ({introTitle, introText, introLinkText, howLogo, secondaryTitle, secondaryStepLogo=true, ...props}) => {
     return (
         <div className='how'>
             <IntroComponent 
                 title={introTitle}
                 text={introText}
+                textDisplayInLink={introLinkText}
             />
             <SecondaryComponent 
                 howLogo={howLogo}
                 title={secondaryTitle}
-                step1={props.step1}
-                step2={props.step2}
-                step3={props.step3}
-                step4={props.step4}
+                stepLogo={secondaryStepLogo}
+                step1Html={props.step1Html}
+                step2Html={props.step2Html}
+                step3Html={props.step3Html}
+                step4Html={props.step4Html}
             />
         </div>
     );
