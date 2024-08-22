@@ -11,12 +11,20 @@ const IntroComponent = ({title, text}) => {
         navigate(pagePrefix);
         window.scrollTo(0, 0);
     }
+
+    // Split the text by <br/> or \n to handle both cases
+    const lines = text.split(/<br\/>|<br>|\\n/gi);
     
     return (
         <div className='intro'>
             <h2>{title}</h2>
             <p>
-                {text}
+                {lines.map((line, index) => (
+                    <React.Fragment key={index}>
+                        {line}
+                        {index < lines.length - 1 && <br />}
+                    </React.Fragment>
+                ))}
                 <br/> <br/>
                 <span 
                     onClick={() => handlePageNavigation('contact')}

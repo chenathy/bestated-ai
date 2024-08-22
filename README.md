@@ -7,3 +7,4 @@ TODO
 4. Complete and Test backend data delivery
 5. Update the pic size to fit into container 
 6. Add underline of header when under its section
+7. Disappear dropdown when clicking somewhere else 

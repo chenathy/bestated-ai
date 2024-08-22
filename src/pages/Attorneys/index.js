@@ -24,12 +24,11 @@ const ForAttorneys = () => {
             {/* How  */}
             <HowComponent 
                 introTitle='Streamlining the process of estate planning'
-                introText={<p1>Bestated is a paradigm-shifting employee benefit, utilizing generative AI and Large Language Models (LLMs) to efficiently draft estate planning documents such as wills, power of attorney, and medical directives. 
+                introText={`Bestated is a paradigm-shifting employee benefit, utilizing generative AI and Large Language Models (LLMs) to efficiently draft estate planning documents such as wills, power of attorney, and medical directives. 
                     By having employers add this to their benefits packages, we aim to make estate planning an easy and accessible process for the 67% of US adults who don’t currently have a will or estate plan. 
                     <br/><br/>
                     While the use of genAI can shorten the traditional process of drafting these legal documents, we still need our attorney partners to review and notarize them. 
-                    This is where you come in! Join Bestated today to expand your client base, and stay updated with the latest in AI applications.
-                    </p1>
+                    This is where you come in! Join Bestated today to expand your client base, and stay updated with the latest in AI applications.`
                 }
                 howLogo={AttorneysHow}
                 secondaryTitle='Here’s how it works:'

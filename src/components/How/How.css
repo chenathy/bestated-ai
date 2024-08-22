@@ -9,7 +9,6 @@
     
     .how .intro {
         width: 1050px;
-        margin-left: 120px;
         gap: 48px;
         display: grid;
         justify-content: center;
@@ -147,7 +146,6 @@
 
     .how .intro p {
         width: 300px;
-        max-height: 261px;
         font-family: 'Public Sans', sans-serif;
         font-size: 18px;
         font-weight: 400;
