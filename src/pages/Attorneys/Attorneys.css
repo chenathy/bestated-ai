@@ -27,6 +27,7 @@
 
     .attorneys .info {
         min-height: 510px;
+        margin-top: 0;
     }
 }
 

@@ -1,0 +1,22 @@
+.financial-advisors {
+    background-color: var(--gray-10);
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .financial-advisors hr {
+        width: 1200px;
+        border: 2px solid var(--blue);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .financial-advisors hr {
+        width: 100vw;
+        border: 1px solid var(--blue);
+    }
+}
