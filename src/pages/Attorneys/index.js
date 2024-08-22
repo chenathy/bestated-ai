@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
+import InfoBoxes from '../../components/InfoBoxes';
 
 import AttorneysHero from '../../assets/images/attorneys-hero.jpg';
 import AttorneysHow from '../../assets/images/attorneys-how.jpg';
@@ -39,6 +40,26 @@ const ForAttorneys = () => {
                 step4='Our attorney finalizes and notarizes it, Bestated signs off, 
                        and copies are sent out to employees and their beneficiaries.'
 
+            />
+
+            {/* Info Boxes */}
+            <InfoBoxes 
+                label1='OUR MODEL'
+                label2='ELIGIBILITY'
+                title1='Revenue-share model'
+                title2='Who should apply?'
+                p1={<p>
+                    Bestated keeps things simple. 
+                    We partner with our attorneys in a revenue share by which you receive a flat percentage of the fee from each new customer. 
+                    Reach out to learn more!
+                </p>}
+                p2={<p>
+                    We are currently active in Texas and Missouri. 
+                    <br/><br/>
+                    If you are an attorney outside of these states and are interested in helping us expand to your state, please don’t hesitate to reach out!
+                </p>}
+                learnMore={true}
+                contact={false}
             />
             
         </div>
