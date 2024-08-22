@@ -1,0 +1,37 @@
+.attorneys {
+    background-color: var(--gray-10);
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .attorneys .how {
+        padding: 96px 120px 160px 120px;
+    }
+
+    .attorneys .how .intro {
+        margin: auto;
+        max-height: 363px;
+    }
+
+    .attorneys .how .intro p {
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+
+    .attorneys .how .intro p br {
+        font-size: 24px;
+        line-height: 33.6px;
+    } 
+
+
+    .attorneys .info {
+        min-height: 510px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+ 
+}
