@@ -69,6 +69,55 @@ const About = () => {
             </div>
 
             <hr/>
+
+            {/* Team  */}
+            <div className='team'>
+                <h2>The Bestated Team</h2>
+                <div className='members'>
+
+                    <div className='member'>
+                        <img
+                            src={JamesHeadshot}
+                            alt='CEO Icon'
+                        />
+                        <a href='https://www.linkedin.com/in/jameskoester/' target='_blank'>James Koester</a>
+                        <p>Founder & CEO</p>
+
+                    </div>
+
+                    <div className='member'>
+                        <img
+                            src={TJHeadshot}
+                            alt='Sales Icon'
+                        />
+                        <a>TJ Wolfe</a>
+                        <p>VP, Sales</p>
+
+                    </div>
+
+                    <div className='member'>
+                        <img
+                            src={TJHeadshot}
+                            alt='Technology Icon'
+                        />
+                        <a>Chen Yukai</a>
+                        <p>VP, Technology</p>
+
+                    </div>
+
+                    <div className='member'>
+                        <img
+                            src={NishaHeadshot}
+                            alt='Design Icon'
+                        />
+                        <a>Nisha Katti</a>
+                        <p>VP, Design</p>
+
+                    </div>
+
+                </div>
+
+            </div>
         
             {/* CTA */}
             <CTA 

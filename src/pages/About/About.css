@@ -11,6 +11,17 @@
         border: 1.5px solid var(--blue);
     }
 
+    .about h2 {
+        height: 54px;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 54px;
+        text-align: center;
+        color: var(--navy);
+        margin: 0;
+    }
+
 
     .about .story {
         height: 765px;
@@ -40,10 +51,9 @@
     .about .story .text-and-btn {
         max-width: 1128px;
         border-radius: var(--CornerSmall);
-        padding: 64px;
-        gap: 32px;
-        position: relative;
-        top: 120px;
+        padding:  64px;
+        position: absolute;
+        top: 220px;
         background-color: var(--white);
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
@@ -53,9 +63,12 @@
         font-size: 56px;
         line-height: 63px;
         color: var(--navy);
+        text-align: left;
+        margin-bottom: 12px;
     }
 
     .about .story .text-and-btn p {
+        width: 1000px;
         max-height: 404px;
         font-size: 18px;
         line-height: 25.2px;
@@ -78,6 +91,68 @@
         text-align: center;
     }
 
+    .about .team {
+        max-height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+
+    .about .team .members {
+        width: 900px;
+        max-height: 270px;
+        margin-top: 96px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .team .member {
+        max-width: 170px;
+        max-height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .member a {
+        width: 164px;
+        height: 32px;
+    
+        font-family: 'Public Sans';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 33.6px;
+        text-align: center;
+        color: var(--black);
+        cursor: pointer;
+        text-decoration: underline;
+        margin-top: 40px;
+    }
+
+    .member p {
+        width: 164px;
+        height: 26px;
+    
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.2px;
+        text-align: center;
+        color: var(--black);
+        margin-top: 8px;
+    }
+
 
 }
 
@@ -88,6 +163,16 @@
     .about hr {
         width: 100%;
         border: 1px solid var(--blue);
+    }
+
+    .about h2 {
+        font-family: 'Bricolage Grotesque';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: center;
+        margin: 0;
+        color: var(--navy);
     }
 
     .about .story {
@@ -159,4 +244,68 @@
         color: var(--navy);
         text-align: left;
     }
+
+    .about .team {
+        margin-top: 96px;
+        margin-bottom: 96px;
+        gap: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .about .members {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 48px;
+    }
+
+    .team .member {
+        width: 130px;
+        max-height: 209px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .member a {
+        width: 100%;
+        height: 26px;
+    
+        font-family: 'Public Sans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25.2px;
+        text-align: center;
+        color: var(--black);
+        cursor: pointer;
+        text-decoration: underline;
+        margin: 0;
+        margin-top: 48px;
+    }
+
+    .member p {
+        width: 100%;
+        height: 23px;
+    
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22.4px;
+        text-align: center;
+        color: var(--black);
+        margin-top: 12px;
+    }
+
+
 }
