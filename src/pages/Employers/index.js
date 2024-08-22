@@ -91,12 +91,12 @@ const ForEmployers = () => {
                 howLogo={employersHow}
                 introLinkText={`Let's get started >`}
                 secondaryTitle='Here’s how it works:'
-                step1='During their onboarding, your employee fills out a Bestated intake form.'
-                step2='Using this form, our team utilizes state-of-the-art generative AI and Large Language Models (LLMs) 
-                        to create drafts of their documents: wills, POAs, and medical directives.'
-                step3='We then send the documents to a Bestated attorney partner in your employee’s state.'
-                step4='Our attorney finalizes and notarizes it, Bestated signs off, 
-                        and copies are sent out to employees and their beneficiaries.'
+                step1Html={<p>During their onboarding, your employee fills out a Bestated intake form.</p>}
+                step2Html={<p>Using this form, our team utilizes state-of-the-art generative AI and Large Language Models (LLMs) 
+                        to create drafts of their documents: wills, POAs, and medical directives.</p>}
+                step3Html={<p>We then send the documents to a Bestated attorney partner in your employee’s state.</p>}
+                step4Html={<p>Our attorney finalizes and notarizes it, Bestated signs off, 
+                        and copies are sent out to employees and their beneficiaries.</p>}
             />
 
             {/* Callout Box  */}

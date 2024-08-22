@@ -39,13 +39,13 @@ const ForFinancialAdvisors = () => {
                 howLogo={financialAdvisorHow}
                 secondaryStepLogo={false}
                 secondaryTitle='Here’s how it works:'
-                step1={`Often, after a beneficiary is updated, there isn't formal communication with financial institutions 
-                        responsible for payable on death (POD) or transferable on death (TOD) execution.`}
-                step2={`Traditionally, estate planning attorneys' and financial advisors' administrative staff spend countless hours 
-                        on the phone with banks and brokerages. Bestated.ai offers a solution to reclaim this time. `}
-                step3={`Our API sends updated beneficiary information directly to the relevant financial institutions, 
-                        allowing admin staff to focus on higher-value activities instead of waiting on hold. `}
-                step4={`Contact us for a demo at <span>hello@bestated.ai</span>.`}
+                step1Html={<p>Often, after a beneficiary is updated, there isn't formal communication with financial institutions 
+                        responsible for payable on death (POD) or transferable on death (TOD) execution.</p>}
+                step2Html={<p>Traditionally, estate planning attorneys' and financial advisors' administrative staff spend countless hours 
+                        on the phone with banks and brokerages. Bestated.ai offers a solution to reclaim this time. </p>}
+                step3Html={<p>Our API sends updated beneficiary information directly to the relevant financial institutions, 
+                        allowing admin staff to focus on higher-value activities instead of waiting on hold. </p>}
+                step4Html={<p>Contact us for a demo at <span>hello@bestated.ai</span>. </p>}
             />
 
             {/* CTA */}

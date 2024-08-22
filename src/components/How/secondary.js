@@ -6,7 +6,11 @@ import Step4Icon from '../../assets/icons/FourInCircle.svg';
 import './How.css';
 
 
-const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3, step4, ...props}) => {
+const SecondaryComponent = ({howLogo, title, stepLogo=true, step1Html, step2Html, step3Html, step4Html, ...props}) => {
+
+    // const detectSpan = /(<span.*?>.*?<\/span>)/gi;
+    // const spanPartSplit = props.step4.split(detectSpan).filter(Boolean)
+    // const spanMatch = props.step4.match(detectSpan);
 
     return (
         <div className='secondary'>
@@ -26,7 +30,7 @@ const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3,
                             alt='Step1'
                         />
                     ) : <></> }
-                    <p>{step1}</p>
+                    {step1Html}
                 </div>
 
                 <div className='step'>
@@ -36,7 +40,7 @@ const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3,
                             alt='Step2'
                         />
                     ) : <></> }
-                    <p>{step2}</p>
+                    {step2Html}
                 </div>
 
                 <div className='step'>
@@ -46,7 +50,7 @@ const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3,
                             alt='Step3'
                         />
                     ) : <></> }
-                    <p>{step3}</p>
+                    {step3Html}
                 </div>
 
                 <div className='step'>
@@ -56,7 +60,7 @@ const SecondaryComponent = ({howLogo, title, stepLogo=true, step1, step2, step3,
                             alt='Step4'
                         />
                     ) : <></> }
-                    <p>{step4}</p>
+                    {step4Html}
                 </div>
 
             </div>

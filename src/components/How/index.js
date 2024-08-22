@@ -16,10 +16,10 @@ const HowComponent = ({introTitle, introText, introLinkText, howLogo, secondaryT
                 howLogo={howLogo}
                 title={secondaryTitle}
                 stepLogo={secondaryStepLogo}
-                step1={props.step1}
-                step2={props.step2}
-                step3={props.step3}
-                step4={props.step4}
+                step1Html={props.step1Html}
+                step2Html={props.step2Html}
+                step3Html={props.step3Html}
+                step4Html={props.step4Html}
             />
         </div>
     );
