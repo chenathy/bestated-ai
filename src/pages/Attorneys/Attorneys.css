@@ -34,5 +34,8 @@
 
 /* Mobile */
 @media (max-width: 768px) {
- 
+    .attorneys hr {
+        width: 100%;
+        border: 1px var(--blue) solid;
+    }
 }
