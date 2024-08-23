@@ -1,0 +1,97 @@
+
+/* Desktop */
+@media (min-width: 769px) {
+    .form-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+
+    .form-container Form {
+        width: 627px;
+        border-radius: var(--CornerSmall);
+        padding: 64px;
+        background: var(--white);
+        box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+        box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+
+        display: grid;
+        gap: 36px;
+    }
+
+    .rs-form-control-label {
+        margin-bottom: 12px;
+        font-family: 'Public Sans';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+    .rs-input {
+        font-family: 'Public Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+
+    .rs-radio-label {
+        font-family: 'Public Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+
+    .rs-picker-toggle  {
+        font-family: 'Public Sans';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+
+
+    Form button {
+        width: 171px;
+        height: 46px;
+        padding: 10px 15px 10px 15px;
+        gap: 10px;
+        border: 0px;
+        border-radius: var(--CornerExtra-small);
+        background-color: var(--mustard);
+        color: var(--black);
+        font-family: 'Public Sans', sans-serif; 
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+
+    Form button:hover {
+        width: 180px;
+        height: 50px;
+        padding: 12px 17px 12px 17px;
+        font-weight: 600;
+        text-decoration: underline;
+
+    }
+
+
+    #req {
+        color: var(--berry);
+        justify-content: center;
+    }
+    
+    #optional {
+        font-weight: 400;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {}

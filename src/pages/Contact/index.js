@@ -8,6 +8,14 @@ import './Contact.css';
 
 
 const Contact = () => {
+
+    const handleContactClick = () => {
+        const ref = document.getElementsByClassName('form-container')
+        if (ref.length > 0) {
+            ref[0].scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <div className='contact'>
 

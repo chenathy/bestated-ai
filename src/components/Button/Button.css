@@ -41,6 +41,15 @@
         font-weight: 600;
         background-color: var(--gray-85);
     }
+
+    .submit {
+        width: 171px;
+        background-color: var(--mustard);
+    }
+
+    .submit:hover {
+        width: 180px;
+    }
 }
 
 
