@@ -16,13 +16,11 @@
 
     .numbers {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        justify-items: center;
-        max-height: 236px;
-        /* max-width: 100vw; */
-        padding: 32px 318px 32px 318px;
         gap: 160px ;
+        justify-content: center;
+        align-items: center;
+        max-height: 236px;
+        padding: 32px 318px 32px 318px;
     }
 
     .numbers .number {
@@ -60,16 +58,19 @@
         margin: 0;
     }
 
+
     .beneficiary-api {
         max-height: 428px;
-        display: flex;
-        align-items: center;
-        /* justify-content: space-evenly; */
+        max-width: 1200px;
         gap: 96px;
         margin-top: 160px;
         margin-bottom: 160px;
-        margin-left: 8.33%;
-        margin-right: 8.33%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .beneficiary-api .img-container {
