@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import InfoBoxes from '../../components/InfoBoxes';
@@ -10,6 +11,8 @@ import './Attorneys.css';
 
 
 const ForAttorneys = () => {
+
+    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     return (
         <div className='attorneys'>
