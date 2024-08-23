@@ -4,6 +4,11 @@
 
 /* Desktop */
 @media (min-width: 769px) {
+    
+    .attorneys hr {
+        width: 1200px;
+        border: 1.5px solid var(--blue);
+    }
 
     .attorneys .how {
         padding: 96px 120px 160px 120px;
@@ -24,10 +29,16 @@
         line-height: 33.6px;
     } 
 
+    .attorneys .how .intro p span {
+        font-weight: 600;
+    };
+
 
     .attorneys .info {
         min-height: 510px;
         margin-top: 0;
+
+        border: 1px navy dashed;
     }
 }
 
@@ -38,4 +49,8 @@
         width: 100%;
         border: 1px var(--blue) solid;
     }
+
+    .attorneys .how .intro p span {
+        font-weight: 600;
+    };
 }

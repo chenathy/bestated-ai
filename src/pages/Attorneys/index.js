@@ -1,5 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import InfoBoxes from '../../components/InfoBoxes';
@@ -11,8 +10,6 @@ import './Attorneys.css';
 
 
 const ForAttorneys = () => {
-
-    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     return (
         <div className='attorneys'>
@@ -37,6 +34,7 @@ const ForAttorneys = () => {
                     While the use of genAI can shorten the traditional process of drafting these legal documents, we still need our attorney partners to review and notarize them. 
                     This is where you come in! Join Bestated today to expand your client base, and stay updated with the latest in AI applications.`
                 }
+                introLinkText={`Let's get started >`}
                 howLogo={AttorneysHow}
                 secondaryTitle='Here’s how it works:'
                 step1Html={<p>During their onboarding, your employee fills out a Bestated intake form.</p>}
@@ -47,6 +45,9 @@ const ForAttorneys = () => {
                        and copies are sent out to employees and their beneficiaries.</p>}
 
             />
+
+            {/* {isDesktop ? <></> : <hr/>} */}
+            <hr/>
 
             {/* Info Boxes */}
             <InfoBoxes 
@@ -67,8 +68,6 @@ const ForAttorneys = () => {
                 learnMore={true}
                 contact={false}
             />
-
-            {isDesktop ? <></> : <hr/>}
             
             {/* CTA  */}
             <CTA 
