@@ -4,15 +4,18 @@
 @media (min-width: 769px) {
 
     .callout-box { 
+        max-width: 1200px;
         max-height: 585px;
         border-radius: var(--CornerSmall);
-        padding: 64px;
-        gap: 64px;
-        position: relative;
-        margin-left: 8.33%;
-        margin-right: 8.33%;
-        display: flex;
+
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 160px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 64px;
     }
 
     .callout-box .text-and-btn {
@@ -21,6 +24,7 @@
         text-align: left;
         display: grid;
         justify-content: space-between;
+        padding: 64px 0 64px 64px;
     }
 
     .callout-box .text-and-btn .group {
@@ -71,9 +75,9 @@
         height: 427px;
         overflow: hidden;
         position: relative;
-        top: 20px;
-        left: 12px;
+        margin-right: 64px;
         border-radius: var(--CornerSmall);
+        
     }
 
     .callout-box .img-container img {
