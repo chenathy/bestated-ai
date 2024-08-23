@@ -24,6 +24,10 @@
         line-height: 33.6px;
     } 
 
+    .attorneys .how .intro p span {
+        font-weight: 600;
+    };
+
 
     .attorneys .info {
         min-height: 510px;

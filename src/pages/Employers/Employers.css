@@ -7,7 +7,7 @@
 
     .employers hr {
         width: 1200px;
-        border: 2px solid var(--blue);
+        border: 1.5px solid var(--blue);
     }
 
     .employers h2 {
