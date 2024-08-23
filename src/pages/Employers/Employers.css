@@ -26,14 +26,17 @@
         max-height: 778px;
         padding: 96px 120px 160px 120px;
         gap: 96px;
-        display: flex;
+        display: grid;
         flex-direction: column;
+        justify-content: center;
     }
 
     .benefits-container .benefits {
         width: 1200px;
         height: 372px;
         gap: 48px;
+        margin-left: auto;
+        margin-left: auto;
         display: flex;
         justify-content: space-between;
     }
