@@ -1,9 +1,6 @@
 
 .home {
     background-color: #F5F5F5;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 /* Desktop */
@@ -116,18 +113,14 @@
     }
 
     .numbers .number {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        display: grid;
-        align-items: center;
         max-width: 85px;
         max-height: 102px;
         gap: 5px;
         text-align: center;
         margin: 0;
         padding: 0;
+        display: grid;
+        align-items: center;
         color: var(--black);
     }
 
