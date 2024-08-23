@@ -2,7 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
-import CTA from '../../components/CTA';
+import CTAComponent from '../../components/CTA';
 
 import financialAdvisorHero from '../../assets/images/financialAdvisors-hero.jpg';
 import financialAdvisorHow from '../../assets/images/financialAdvisors-how.jpg';
@@ -49,7 +49,7 @@ const ForFinancialAdvisors = () => {
             />
 
             {/* CTA */}
-            <CTA 
+            <CTAComponent
                 h1Message={ <h1>Ready to join Bestated<br/>and expand your business?</h1> }
                 buttonInfo={{ textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />

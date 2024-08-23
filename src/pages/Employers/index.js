@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import CalloutBox from '../../components/Callout';
-import CTA from '../../components/CTA';
+import CTAComponent from '../../components/CTA';
 
 import employersHero from '../../assets/images/employers-hero.jpg';
 import employersHow from '../../assets/images/employers-how.jpg';
@@ -109,7 +109,7 @@ const ForEmployers = () => {
             />
 
             {/* CTA  */}
-            <CTA 
+            <CTAComponent 
                 h1Message={<h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1>}
                 buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />

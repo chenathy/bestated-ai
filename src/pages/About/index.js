@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import TextAndBtn from '../../components/Text-and-Btn';
-import CTA from '../../components/CTA';
+import CTAComponent from '../../components/CTA';
 import AboutLogo from '../../assets/images/about.jpg';
 import JamesHeadshot from '../../assets/images/James-headshot.jpeg';
 import TJHeadshot from '../../assets/images/TJ-headshot.jpeg';
@@ -120,7 +120,7 @@ const About = () => {
             </div>
         
             {/* CTA */}
-            <CTA 
+            <CTAComponent
                 h1Message={<h1>Ready to explore Bestated?</h1> }
                 buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />
