@@ -5,7 +5,7 @@ import Button from '../Button';
 import './Hero.css';
 
 
-const HeroComponent = ({h1Content, h4Content, heroLogo, contactBtn = true, aboutBtn = false, ...props}) => {
+const HeroComponent = ({h1Content, h4Content, pHtml, heroLogo, contactBtn = true, aboutBtn = false, ...props}) => {
 
     const isDesktop = useMediaQuery({ minWidth: 768 });
 
@@ -28,9 +28,9 @@ const HeroComponent = ({h1Content, h4Content, heroLogo, contactBtn = true, about
             )}
 
             <div className='text-and-btn'>
-                <h1>{h1Content}</h1>
-                <h4>{h4Content}</h4>
-
+                {h1Content ? <h1>{h1Content}</h1> : <></>} 
+                {h4Content ? <h4>{h4Content}</h4> : <></>}
+                {pHtml ? pHtml : <></>}
                 <div className='btn'>
 
                     {contactBtn ? (
