@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
 import TextAndBtn from '../../components/Text-and-Btn';
 import CTA from '../../components/CTA';
 import AboutLogo from '../../assets/images/about.jpg';
@@ -11,7 +11,7 @@ import './About.css';
 
 const About = () => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
+    const isDesktop = useIsDesktop();
 
     return (
         <div className='about'>
