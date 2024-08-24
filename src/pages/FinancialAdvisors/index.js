@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import CTA from '../../components/CTA';
@@ -11,7 +11,7 @@ import './FinancialAdvisors.css';
 
 const ForFinancialAdvisors = () => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
+    const isDesktop = useIsDesktop();
 
     return (
         <div className='financial-advisors'>

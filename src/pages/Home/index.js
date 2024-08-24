@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
 import HeroComponent from '../../components/Hero';
 import InfoBoxes from '../../components/InfoBoxes';
 import CalloutBox from '../../components/Callout';
@@ -14,7 +14,7 @@ import './Home.css';
 
 const Home = () => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
+    const isDesktop = useIsDesktop();
 
     return (
         <div className='home'>
