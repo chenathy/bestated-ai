@@ -50,10 +50,6 @@
         color: var(--navy);
     }
 
-    .hero .text-and-btn span {
-        font-weight: 600;
-    }
-
     .hero .text-and-btn p {
         font-family: 'Public Sans';
         font-size: 24px;
@@ -156,6 +152,11 @@
         line-height: 25.2px;
         color: var(--navy);
         margin: 0;
+    }
+    
+    .hero .text-and-btn span {
+        font-weight: 600;
+        text-decoration: underline;
     }
 
     .hero .text-and-btn .btn {

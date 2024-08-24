@@ -119,7 +119,6 @@ const FormComponent = () => {
                         name='companyName' 
                         id='companyName'
                         type='text' 
-                        required 
                         placeholder='Enter your company name'
                     />
                 </Form.Group>
