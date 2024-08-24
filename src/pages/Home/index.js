@@ -114,10 +114,9 @@ const Home = () => {
                     />
                 </div>
                 <TextAndBtn 
-                    label={<label style={{color: `var(--berry)`}}>FINANCIAL ADVISORS AND ESTATE ATTORNEYS</label>}
-                    title={<h2 style={{color: `var(--navy)`}}>Our Beneficiary API will simplify the process of updating your will.</h2>}
-                    tilteColor={`var(--navy)`}
-                    passage={<p style={{color: `var(--navy)`}}>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>}
+                    labelHtml={<label style={{color: `var(--berry)`}}>FINANCIAL ADVISORS AND ESTATE ATTORNEYS</label>}
+                    titleHtml={<h2 style={{color: `var(--navy)`}}>Our Beneficiary API will simplify the process of updating your will.</h2>}
+                    passageHtml={<p style={{color: `var(--navy)`}}>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>}
                     buttons={[ {textDisplay: 'Learn more', onClickDestination: 'employers', state: 'secondary'} ]}
                 />
             </div>

@@ -26,8 +26,8 @@ const About = () => {
                 
                 {/* Text and Button */}
                 <TextAndBtn 
-                    title={<h2>The Bestated Story</h2>}
-                    passage={<p>
+                    titleHtml={<h2>The Bestated Story</h2>}
+                    passageHtml={<p>
                         After the untimely death of a family member, our founder James Koester encountered a challenge many American families face: navigating legal complexities amid the grief of loss. 
                         This difficult experience thrust his family into the probate process, leaving James determined to find a better way.
                         <br/><br/>  
@@ -48,8 +48,8 @@ const About = () => {
 
             <div className='usage'>
                 <TextAndBtn 
-                    title={<h2>How genAI and LLMs play their part</h2>}
-                    passage={<p>
+                    titleHtml={<h2>How genAI and LLMs play their part</h2>}
+                    passageHtml={<p>
                         The problem with the current estate planning process is that legal documents are complex, 
                         and many “do-it-yourself” solutions fall off the rails when a family’s unique circumstances don't fit the template. 
                         However, engaging an attorney significantly increases costs.
