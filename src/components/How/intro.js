@@ -1,16 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import './How.css';
 
 
 const IntroComponent = ({title, text, textDisplayInLink }) => {
 
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const handlePageNavigation = usePageNavigation();
 
     // Split the text by <br/> or \n to handle both cases
     const lines = text.split(/<br\/>|<br>|\\n/gi);

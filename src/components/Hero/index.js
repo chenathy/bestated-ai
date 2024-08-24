@@ -1,20 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import Button from '../Button';
 import './Hero.css';
 
 
 const HeroComponent = ({h1Content, h4Content, heroLogo, contactBtn = true, aboutBtn = false, ...props}) => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
-
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const isDesktop = useIsDesktop();
+    const handlePageNavigation= usePageNavigation();
 
     return (
         <div className='hero'>

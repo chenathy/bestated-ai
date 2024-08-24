@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import Button from '../Button';
 import './Text-and-Btn.css';
 import { useReducer, useRef } from 'react';
@@ -8,14 +7,7 @@ import { useReducer, useRef } from 'react';
 
 const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
-
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const handlePageNavigation = usePageNavigation()
 
     const buttonsDisplay = (buttonsArray) => {
         if (Array.isArray(buttonsArray) && buttonsArray.length > 0) {

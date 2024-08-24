@@ -1,20 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import './Callout.css';
 import Button from '../Button';
 
 
 const CalloutBox = ({ label, title, p, logo, learnMoreBtn = true, contactBtn = true, ...props }) => {
 
-    const isDesktop = useMediaQuery({ minWidth: 768 });
-
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const isDesktop = useIsDesktop();
+    const handlePageNavigation = usePageNavigation();
 
     return (
         <div className='callout-box'>

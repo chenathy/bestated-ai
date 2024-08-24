@@ -1,17 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import Button from '../Button';
 import './CTA.css';
 
 
 const CTA = ({h1Message, buttonInfo, ...props}) => {
 
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const handlePageNavigation= usePageNavigation();
 
     return (
         <div className='cta'>

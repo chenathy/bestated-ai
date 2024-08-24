@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import './Footer.css';
 import Logo from '../../assets/icons/logo-white.svg';
 import LinkedIn from '../../assets/icons/LinkedIn.svg';
@@ -10,12 +10,7 @@ import Facebook from '../../assets/icons/Facebook.svg';
 
 const DesktopFooter = () => {
 
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const handlePageNavigation= usePageNavigation();
 
     return (
         <footer className='footer'>
