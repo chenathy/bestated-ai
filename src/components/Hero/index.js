@@ -5,10 +5,18 @@ import Button from '../Button';
 import './Hero.css';
 
 
-const HeroComponent = ({h1Content, h4Content, pHtml, heroLogo, contactBtn = true, aboutBtn = false, ...props}) => {
+const HeroComponent = ({h1Content, h4Content, pHtml, heroLogo, contactBtn = true, aboutBtn = false, contactScroll = false, ...props}) => {
 
     const isDesktop = useIsDesktop();
     const handlePageNavigation= usePageNavigation();
+
+
+    const handleContactClick = () => {
+        const ref = document.getElementsByClassName('form-container')
+        if (ref.length > 0) {
+            ref[0].scrollIntoView({ behavior: 'smooth' })
+        }
+    }
 
     return (
         <div className='hero'>
@@ -39,6 +47,13 @@ const HeroComponent = ({h1Content, h4Content, pHtml, heroLogo, contactBtn = true
                             textDisplay={'About us'}
                             onClick={() => handlePageNavigation('about')}
                             state='secondary'
+                        />
+                    ) : (<></>)}
+
+                    {contactScroll ? (
+                        <Button 
+                            textDisplay='Get in contact'
+                            onClick={handleContactClick}
                         />
                     ) : (<></>)}
                 </div>

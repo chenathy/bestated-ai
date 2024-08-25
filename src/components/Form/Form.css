@@ -11,6 +11,7 @@
         width: 627px;
         border-radius: var(--CornerSmall);
         padding: 64px;
+        margin-bottom: 160px;
         background-color: var(--white);
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
@@ -89,6 +90,57 @@
     #optional {
         font-weight: 400;
     }
+
+    .thank-you {
+        background-color: var(--gray-10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+
+        margin-top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .thank-you h3 {
+        max-width: 1000px;
+        max-height: 73px;
+        font-family: 'Public Sans';
+        font-weight: 600px;
+        font-size: 28px;
+        line-height: 1.5em;
+        text-align: center;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .thank-you p {
+        max-width: 535px;
+        max-height: 34px;
+        font-family: 'Public Sans', sans-serif;
+        font-family: 400;
+        font-size: 24px;
+        line-height: 33.6px;
+        text-align: center;
+        color: var(--navy);
+    }
+
+    .thank-you .social-icons {
+        width: 250px;
+        height: 40.64px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .thank-you .social-icons img {
+        height: 39.07px;
+        cursor: pointer;
+    }
+
+    .thank-you .social-icons img:hover {
+        height: 42px;
+    }
 }
 
 
@@ -115,6 +167,7 @@
         min-width: 300px;
         margin-left: 8.33%;
         margin-right: 8.33%;
+        margin-bottom: 120px;
 
         border-radius: var(--CornerSmall);
     }
@@ -184,6 +237,49 @@
     
     #optional {
         font-weight: 400;
+    }
+
+    .thank-you {
+        background-color: var(--gray-10);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding: 0 32px 64px 32px;
+    }
+
+    .thank-you h3 {
+        font-family: 'Public Sans';
+        font-weight: 600px;
+        font-size: 26px;
+        line-height: 1.5em;
+        text-align: center;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .thank-you p {
+        font-family: 'Public Sans', sans-serif;
+        font-family: 400;
+        font-size: 22px;
+        line-height: 33.6px;
+        text-align: center;
+        color: var(--navy);
+    }
+
+
+    .thank-you .social-icons {
+        width: 280px;
+        height: 42px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .thank-you .social-icons img {
+        height: 42px;
+        width: 42px;
     }
 
 }
