@@ -4,7 +4,7 @@ import Button from '../Button';
 import './CTA.css';
 
 
-const CTA = ({h1Message, buttonInfo, ...props}) => {
+const CTAComponent = ({h1Message, buttonInfo, ...props}) => {
 
     const handlePageNavigation= usePageNavigation();
 
@@ -20,4 +20,4 @@ const CTA = ({h1Message, buttonInfo, ...props}) => {
     );
 };
 
-export default CTA;
+export default CTAComponent;

@@ -9,6 +9,7 @@ import ForEmployers from './pages/Employers';
 import ForAttorneys from './pages/Attorneys';
 import ForFinancialAdvisors from './pages/FinancialAdvisors';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 const App = () => {
@@ -21,11 +22,11 @@ const App = () => {
 
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/employers' element={<ForEmployers/>} />
-                    <Route path='/professional-attorneys' element={<ForAttorneys/>} />
-                    <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
+                    <Route path='/employers' element={<ForEmployers />} />
+                    <Route path='/professional-attorneys' element={<ForAttorneys />} />
+                    <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors />} />
                     <Route path='/about' element={<About />} />
-                    {/* <Route path='/contact' element={<Contact />} />  */}
+                    <Route path='/contact' element={<Contact />} /> 
                     <Route path='/bestated-ai' element={<Home />} />
                 </Routes>
 

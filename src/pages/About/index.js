@@ -1,7 +1,7 @@
 import React from 'react';
 import useIsDesktop from '../../hooks/useIsDesktop';
 import TextAndBtn from '../../components/Text-and-Btn';
-import CTA from '../../components/CTA';
+import CTAComponent from '../../components/CTA';
 import AboutLogo from '../../assets/images/about.jpg';
 import JamesHeadshot from '../../assets/images/James-headshot.jpeg';
 import TJHeadshot from '../../assets/images/TJ-headshot.jpeg';
@@ -26,8 +26,8 @@ const About = () => {
                 
                 {/* Text and Button */}
                 <TextAndBtn 
-                    title={<h2>The Bestated Story</h2>}
-                    passage={<p>
+                    titleHtml={<h2>The Bestated Story</h2>}
+                    passageHtml={<p>
                         After the untimely death of a family member, our founder James Koester encountered a challenge many American families face: navigating legal complexities amid the grief of loss. 
                         This difficult experience thrust his family into the probate process, leaving James determined to find a better way.
                         <br/><br/>  
@@ -48,8 +48,8 @@ const About = () => {
 
             <div className='usage'>
                 <TextAndBtn 
-                    title={<h2>How genAI and LLMs play their part</h2>}
-                    passage={<p>
+                    titleHtml={<h2>How genAI and LLMs play their part</h2>}
+                    passageHtml={<p>
                         The problem with the current estate planning process is that legal documents are complex, 
                         and many “do-it-yourself” solutions fall off the rails when a family’s unique circumstances don't fit the template. 
                         However, engaging an attorney significantly increases costs.
@@ -120,7 +120,7 @@ const About = () => {
             </div>
         
             {/* CTA */}
-            <CTA 
+            <CTAComponent
                 h1Message={<h1>Ready to explore Bestated?</h1> }
                 buttonInfo={{textDisplay: 'Get in contact', destinationPage: 'contact'}}
             />

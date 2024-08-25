@@ -5,7 +5,7 @@ import './Text-and-Btn.css';
 import { useReducer, useRef } from 'react';
 
 
-const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
+const TextAndBtn = ({ labelHtml, titleHtml, passageHtml, buttons, ...props }) => {
 
     const handlePageNavigation = usePageNavigation()
 
@@ -25,7 +25,6 @@ const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
 
             );
         } else {
-            console.log(`it is not an array`)
             return (<></>);
         }
     }
@@ -34,11 +33,11 @@ const TextAndBtn = ({ label, title, passage, buttons, ...props }) => {
     return(
         <div className='text-and-btn'>
             <div className='group'>
-                {label ? label : <></>}
-                {title ? title : <></>}
+                {labelHtml ? labelHtml : <></>}
+                {titleHtml ? titleHtml : <></>}
             </div>
 
-            {passage}
+            {passageHtml}
 
             {buttonsDisplay(buttons)}
             

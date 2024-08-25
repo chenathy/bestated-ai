@@ -3,7 +3,7 @@ import useIsDesktop from '../../hooks/useIsDesktop';
 import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import InfoBoxes from '../../components/InfoBoxes';
-import CTA from '../../components/CTA';
+import CTAComponent from '../../components/CTA';
 
 import AttorneysHero from '../../assets/images/attorneys-hero.jpg';
 import AttorneysHow from '../../assets/images/attorneys-how.jpg';
@@ -73,7 +73,7 @@ const ForAttorneys = () => {
             />
             
             {/* CTA  */}
-            <CTA 
+            <CTAComponent 
                 h1Message={<h1>Ready to join Bestated<br/>and expand your business?</h1> }
                 buttonInfo={{ textDisplay: 'Get in contact', destinationPage: 'contact' }}
             />
