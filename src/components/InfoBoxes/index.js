@@ -1,16 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import usePageNavigation from '../../hooks/usePageNavigation';
 import './InfoBoxes.css';
 
 
 const InfoBoxes = ({ label1, label2, title1, title2, p1, p2, learnMore = true, contact = true,  ...props }) => {
 
-    const navigate = useNavigate();
-    const handlePageNavigation= (page) => {
-        const pagePrefix = `/${page}`
-        navigate(pagePrefix);
-        window.scrollTo(0, 0);
-    }
+    const handlePageNavigation = usePageNavigation();
 
     return (
         <div className='info'>

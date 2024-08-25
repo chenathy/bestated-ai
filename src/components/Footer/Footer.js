@@ -1,11 +1,11 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import useIsDesktop from '../../hooks/useIsDesktop';
 import DesktopFooter from './DesktopFooter';
 import MobileFooter from './MobileFooter';
 
 
 const Footer = () => {
-    const isDesktop = useMediaQuery({ minWidth: 768 });
+    const isDesktop = useIsDesktop();
     return isDesktop ? <DesktopFooter /> : <MobileFooter />
 };
 
