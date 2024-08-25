@@ -10,7 +10,10 @@ import './Contact.css';
 
 const Contact = () => {
 
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formSubmitted, setFormSubmitted] = useState(true);
+    const handleFormSubmitted = (submittedSuccess) => {
+        setFormSubmitted(submittedSuccess);
+    }
 
     return (
         <div className='contact'>
@@ -31,7 +34,9 @@ const Contact = () => {
                     />
                         
                     {/* From  */}
-                    <FormComponent />
+                    <FormComponent 
+                        onFormComplete={handleFormSubmitted}
+                    />
                 </>
             ) : ( 
                 <>
