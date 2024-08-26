@@ -134,7 +134,7 @@
 
     .hero .text-and-btn h1 {
         width: 300px;
-        height: 95px;
+        max-height: 95px;
         font-family: 'Bricolage Grotesque';
         font-weight: 600;
         font-size: 28px;

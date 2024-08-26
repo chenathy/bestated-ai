@@ -15,4 +15,4 @@ const Button = ({ textDisplay, onClick, type = 'button', state = 'primary', disa
     );
 };
   
-  export default Button;
+export default Button;

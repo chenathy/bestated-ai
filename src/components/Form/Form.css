@@ -11,6 +11,7 @@
         width: 627px;
         border-radius: var(--CornerSmall);
         padding: 64px;
+        margin-bottom: 160px;
         background-color: var(--white);
         box-shadow: 0px 4px 4px -4px #0C0C0D0D;
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
@@ -55,29 +56,26 @@
     }
 
 
-
-    Form button {
-        width: 171px;
-        height: 46px;
-        padding: 10px 15px 10px 15px;
-        gap: 10px;
-        border: 0px;
-        border-radius: var(--CornerExtra-small);
-        background-color: var(--mustard);
-        color: var(--black);
-        font-family: 'Public Sans', sans-serif; 
-        font-weight: 400;
+    Form select {
+        width: 100%;
+        height: 42px;
+        border-radius: 6px;
+        border: 1px solid var(--gray-25);
+        font-family: 'Public Sans';
         font-size: 18px;
+        font-weight: 400;
         line-height: 25.2px;
+        text-align: left;
+        text-indent: 10px;
+        color: var(--gray-85);
     }
 
-    Form button:hover {
-        width: 180px;
-        height: 50px;
-        padding: 12px 17px 12px 17px;
-        font-weight: 600;
-        text-decoration: underline;
+    Form select:valid {
+        color: var(--black);
+    }
 
+    Form Button {
+        border: 1px navy dashed;
     }
 
 
@@ -88,6 +86,57 @@
     
     #optional {
         font-weight: 400;
+    }
+
+    .thank-you {
+        background-color: var(--gray-10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
+
+    .thank-you h3 {
+        max-width: 1000px;
+        max-height: 73px;
+        font-family: 'Public Sans';
+        font-weight: 600px;
+        font-size: 28px;
+        line-height: 1.5em;
+        text-align: center;
+        color: var(--navy);
+        margin: 0;
+    }
+
+    .thank-you p {
+        max-width: 535px;
+        max-height: 34px;
+        font-family: 'Public Sans', sans-serif;
+        font-family: 400;
+        font-size: 24px;
+        line-height: 33.6px;
+        text-align: center;
+        color: var(--navy);
+    }
+
+    .thank-you .social-icons {
+        width: 250px;
+        height: 40.64px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .thank-you .social-icons img {
+        height: 39.07px;
+        cursor: pointer;
+    }
+
+    .thank-you .social-icons img:hover {
+        height: 42px;
     }
 }
 
@@ -115,6 +164,7 @@
         min-width: 300px;
         margin-left: 8.33%;
         margin-right: 8.33%;
+        margin-bottom: 120px;
 
         border-radius: var(--CornerSmall);
     }
@@ -156,25 +206,22 @@
         text-align: left;
     }
 
-    Form button {
-        width: 149px;
-        height: 43px;
-        padding: 10px 12px 10px 12px;
-        gap: 10px;
-        border-radius: var(--CornerExtra-small);
-        opacity: 0px;
-        background-color: var(--mustard);
+    Form select {
+        font-family: 'Public Sans';
         font-size: 16px;
         font-weight: 400;
         line-height: 22.4px;
-        color: var(--black);
-        box-shadow: 0px 4px 4px -4px #0C0C0D0D;
-        box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+        text-align: left;
+        width: 100%;
+        height: 40px;
+        border-radius: 6px;
+        border: 1px solid var(--gray-25);
+        color: var(--gray-85);
+        text-indent: 5px;
     }
 
-    Form button:active {
-        font-weight: 600;
-        text-decoration: underline;
+    Form select:valid {
+        color: var(--black);
     }
 
     #req {
@@ -184,6 +231,49 @@
     
     #optional {
         font-weight: 400;
+    }
+
+    .thank-you {
+        background-color: var(--gray-10);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        padding: 64px 32px 64px 32px;
+    }
+
+    .thank-you h3 {
+        font-family: 'Public Sans';
+        font-weight: 600px;
+        font-size: 26px;
+        line-height: 1.5em;
+        text-align: center;
+        color: var(--navy);
+
+    }
+
+    .thank-you p {
+        font-family: 'Public Sans', sans-serif;
+        font-family: 400;
+        font-size: 22px;
+        line-height: 33.6px;
+        text-align: center;
+        color: var(--navy);
+    }
+
+
+    .thank-you .social-icons {
+        width: 280px;
+        height: 42px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .thank-you .social-icons img {
+        height: 42px;
+        width: 42px;
     }
 
 }

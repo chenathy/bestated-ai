@@ -1,31 +1,53 @@
-import React from 'react';
-import { Form, RadioGroup, Radio, SelectPicker, Input, Button } from 'rsuite'; 
+import React, { useState } from 'react';
+import { Form, RadioGroup, Radio, Input } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
-// import Button from '../Button';
+import Button from '../Button/Button';
 import './Form.css';
 
 
-const FormComponent = () => {
+const FormComponent = ({ onFormComplete, ...props}) => {
 
-    const Textarea = React.forwardRef((props, ref) => <Input {...props} as='textarea' ref={ref} />);
-
+    // Options in Form
+    // Client Type
     const clientTypeOptions = [
-        {label: 'An employer interested in employer-sponsored wills', value: 'employer'},
-        {label: 'An attorney interested in becoming a Bestated partner', value: 'attorney'},
-        {label: 'A financial advisor interested in the beneficiary API', value: 'financialAdvisor'},
-        {label: 'An individual looking for more information', value: 'individual'},
-        {label: 'Other', value: 'other'}
-    ];
+        { label: 'An employer interested in employer-sponsored wills', value: 'employer' },
+        { label: 'An attorney interested in becoming a Bestated partner', value: 'attorney' },
+        { label: 'A financial advisor interested in the beneficiary API', value: 'financialAdvisor' },
+        { label: 'An individual looking for more information', value: 'individual' },
+        { label: 'Other', value: 'other'}
+    ].map((option) => (
+        <Radio  
+            name='type'
+            key={option.value}
+            value={option.value}
+            required
+            onChange={(value) => setFormValue({...formValue, type: value})}
+        >
+            {option.label}
+        </Radio>
+    ));
 
+
+    // Company Size 
     const companySizeOptions = [
-        {label: '1 - 10 people', value: '1 - 10'},
-        {label: '11 - 20 people', value: '11 - 20'},
-        {label: '21 - 50 people', value: '21 - 50'},
-        {label: '50 - 250 people', value: '50 - 250'},
-        {label: '250+', value: '250+'}
-    ];
+        { label: '1 - 10 people', value: '1 - 10' },
+        { label: '11 - 20 people', value: '11 - 20' },
+        { label: '21 - 50 people', value: '21 - 50' },
+        { label: '50 - 250 people', value: '50 - 250' },
+        { label: '250+', value: '250+' }
+    ].map((option) => (
+        <Radio 
+            key={option.value}
+            value={option.value}
+            onChange={(value) => setFormValue({...formValue, size: value})}
+        >
+            {option.label}
+        </Radio>
+    ));
 
+    // States 
     const usStates = [
+        { label: 'Choose a state', value: '' },
         { label: 'Alabama', value: 'AL' },
         { label: 'Alaska', value: 'AK' },
         { label: 'Arizona', value: 'AZ' },
@@ -77,7 +99,102 @@ const FormComponent = () => {
         { label: 'Wisconsin', value: 'WI' },
         { label: 'Wyoming', value: 'WY' },
         { label: 'Oversea', value: 'oversea'}
-    ];
+    ].map((o, index) => (
+        <option 
+            key={o.value}
+            value={o.value} 
+            disabled={index===0} 
+        >
+            {o.label}
+        </option>
+    ))
+
+
+    // Collect Information
+    const [formValue, setFormValue] = useState({
+        contactName: '',
+        type: '',
+        companyName: '',
+        size: '',
+        email: '',
+        phone: '',
+        state: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const [hasErrors, setHasErrors] = useState(false);
+    const [errorMessages, setErrorMessages] = useState([]);
+
+    const validateForm = () => {
+        const errors = [];
+    
+        if (!formValue.contactName.trim()) {
+          errors.push('Name is required.');
+        }
+    
+        if (!formValue.type) {
+          errors.push('Please select your client type.');
+        }
+    
+        if (!formValue.email.trim()) {
+          errors.push('Email is required.');
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formValue.email)) {
+          errors.push('Please enter a valid email address.');
+        }
+    
+        if (!formValue.state) {
+          errors.push('State is required.');
+        }
+    
+        if (!formValue.message.trim()) {
+          errors.push('Message is required.');
+        }
+    
+        setHasErrors(errors.length > 0);
+        setErrorMessages(errors);
+    
+        return errors.length === 0; 
+    };
+
+    const handleSubmit = async() => {
+        if (validateForm()){
+            console.log(`formValue: ${JSON.stringify(formValue)}`); 
+
+            onFormComplete(true);
+
+            // // Saving Data throught API 
+            // try {
+            //     const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}:${process.env.REACT_APP_BACKEND_PORT}/submit`, {
+            //         method: 'POST',
+            //         headers: {
+            //         'Content-Type': 'application/json',
+            //         },
+            //         body: JSON.stringify(formData),
+            //     });
+    
+            //     if (response.ok) {
+            //         alert('Your Info has been submitted successfully!');
+            //     } else {
+            //         alert('Failed to submit data.');
+            //     }
+            // } catch (error) {
+            //     console.error('Error submitting data:', error);
+            //     alert('An error occurred while submitting data.');
+            // }
+
+
+        } else {
+            console.log(`Missing Info `)
+        }
+    } 
 
 
 
@@ -85,111 +202,113 @@ const FormComponent = () => {
         <div className='form-container'>
             <Form
                 fluid
+                formValue={formValue}
+                onChange={setFormValue}
+                onSubmit={handleSubmit}
             >
+                {/* Contact Name */}
                 <Form.Group>
                     <Form.ControlLabel htmlFor='name'><p>Name <span id='req'>*</span></p></Form.ControlLabel>
-                    <Form.Control 
-                        name='contactName' 
-                        id='contactName'
-                        type='text' 
+                    <Input 
                         placeholder='Enter your full name'
-                        required 
+                        value={formValue.contactName}
+                        onChange={(value) => setFormValue({...formValue, contactName: value})}
+                        required
                     />
                 </Form.Group>
 
+                {/* Client Type */}
                 <Form.Group>
                     <Form.ControlLabel><p>Who are you ? <span id='req'>*</span></p></Form.ControlLabel>
                     <RadioGroup name='type'>
-                        {companySizeOptions.map(option => (
-                            <Radio
-                                key={option.value}
-                                value={option.value}
-                                required
-                            >
-                                {option.label}
-                            </Radio>
-                        ))}
-
+                        {clientTypeOptions}
                     </RadioGroup>
                 </Form.Group>
 
+                {/* Company Name  */}
                 <Form.Group>
                     <Form.ControlLabel htmlFor='company'><p>Company Name <span id='optional'>(optional)</span></p></Form.ControlLabel>
-                    <Form.Control 
-                        name='companyName' 
+                    <Input 
                         id='companyName'
-                        type='text' 
+                        type='text'
                         placeholder='Enter your company name'
+                        value={formValue.companyName}
+                        onChange={(value) => setFormValue((prev) => ({...prev, companyName: value}))}
                     />
                 </Form.Group>
 
 
+                {/* Company Size  */}
                 <Form.Group>
                     <Form.ControlLabel><p>Number of employees <span id='optional'>(optional)</span></p></Form.ControlLabel>
                     <RadioGroup name='size'>
-                        {clientTypeOptions.map(option => (
-                            <Radio
-                                key={option.value}
-                                value={option.value}
-                            >
-                                {option.label}
-                            </Radio>
-                        ))}
-
+                        {companySizeOptions}
                     </RadioGroup>
                 </Form.Group>
                 
 
+                {/* Email  */}
                 <Form.Group>
                     <Form.ControlLabel htmlFor='email'><p>Email <span id='req'>*</span></p></Form.ControlLabel>
-                    <Form.Control 
-                        name='email' 
+                    <Input 
                         id='email'
-                        type='text' 
+                        name='email'
                         placeholder='Give us the best email to contact you at'
-                        required 
+                        value={formValue.email}
+                        onChange={(value) => setFormValue((prev) => ({...prev, email: value}))}
+                        required
                     />
                 </Form.Group>
 
 
+                {/* Phone  */}
                 <Form.Group>
                     <Form.ControlLabel htmlFor='phone'><p>Phone <span id='optional'>(optional, but suggested)</span></p></Form.ControlLabel>
-                    <Form.Control 
-                        name='phone' 
+                    <Input 
                         id='phone'
-                        type='text' 
+                        name='phone'
                         placeholder='Enter your phone number'
+                        value={formValue.phone}
+                        onChange={(value) => setFormValue((prev) => ({...prev, phone: value}))}
                     />
                 </Form.Group>
 
 
+                {/* US states */}
                 <Form.Group>
                     <Form.ControlLabel htmlFor='state'><p>State <span id='req'>*</span></p></Form.ControlLabel>
-                    <Form.Control
+                    <select
                         name='state'
-                        accepter={SelectPicker}
-                        data={usStates}
-                        placeholder='Choose state'
+                        value={formValue.state || ''}  
+                        onChange={(e) => setFormValue({ ...formValue, [e.target.name] : e.target.value })}
                         required
-                    />
+                    >
+                        {usStates}
+                    </select>
                 </Form.Group>
 
+                {/* Leave a message */}
                 <Form.Group>
-                    <Form.ControlLabel ><p>Message <span id='req'>*</span></p></Form.ControlLabel>
-                    <Form.Control
-                        name='message'
-                        accepter={Textarea}
+                    <Form.ControlLabel ><p>Message <span id='req'>*</span></p></Form.ControlLabel>  
+                    <Input
+                        as='textarea'
                         rows={5}
                         placeholder='Shoot us a message!'
+                        value={formValue.message}
+                        onChange={(value) => setFormValue({ ...formValue, message: value})}
                         required
                     />
                 </Form.Group>
 
-                <button>Submit message</button>
-                {/* <Button 
-                    textDisplay='Submit Message'
-                    state='submit'
-                /> */}
+                {/* Submit Button */}
+                <Form.Group>
+                    <Button 
+                        textDisplay='Submit Message'
+                        state='primary'
+                        type='submit'
+                    />
+
+                </Form.Group>
 
             </Form>
 
