@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import HeroComponent from '../../components/Hero';
 import FormComponent from '../../components/Form';
 import ThankyouPageComponent from '../../components/Form/ThankYou';
@@ -13,6 +12,8 @@ const Contact = () => {
     const [formSubmitted, setFormSubmitted] = useState(false);
     const handleFormSubmitted = (submittedSuccess) => {
         setFormSubmitted(submittedSuccess);
+
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
     }
 
     return (
