@@ -10,7 +10,7 @@ import './Contact.css';
 
 const Contact = () => {
 
-    const [formSubmitted, setFormSubmitted] = useState(true);
+    const [formSubmitted, setFormSubmitted] = useState(false);
     const handleFormSubmitted = (submittedSuccess) => {
         setFormSubmitted(submittedSuccess);
     }
