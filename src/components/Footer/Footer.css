@@ -150,12 +150,17 @@
 
 
     .main .social {
-        max-width: 200px;
-        height: 25px;
+        min-width: 200px;
+        height: 36px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }   
+
+    .main .social img {
+        width: 34px;
+        height: 34px;
+    }
 
     .copyright {
         width: 100vw;
