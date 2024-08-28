@@ -1,5 +1,6 @@
 import React from 'react';
 import usePageNavigation from '../../hooks/usePageNavigation';
+import footerLinks from './FooterLinks';
 import './Footer.css';
 import Logo from '../../assets/icons/logo-white.svg';
 import LinkedIn from '../../assets/icons/LinkedIn.svg';
@@ -29,22 +30,35 @@ const MobileFooter = () => {
                     <p onClick={() => handlePageNavigation('contact')}>Get in contact</p>
                 </div>
                 <div className='social'>
-                    <img
-                        src={LinkedIn}
-                        alt='LinkedIn'
-                    />
-                    <img
-                        src={Instagram}
-                        alt='Instagram'
-                    />
-                    <img
-                        src={TikTok}
-                        alt='TikTok'
-                    />
-                    <img
-                        src={Facebook}
-                        alt='Facebook'
-                    />
+                    <a
+                        href={footerLinks['LinkedIn']['url']} target='_blank' rel='noopener noreferrer'>
+                        <img
+                            src={LinkedIn}
+                            alt='LinkedIn'
+                        />
+                    </a>
+
+                    <a>
+                        <img
+                            src={Instagram}
+                            alt='Instagram'
+                        />
+                    </a>
+
+                    <a>
+                        <img
+                            src={TikTok}
+                            alt='TikTok'
+                        />
+                    </a>
+
+                    <a>
+                        <img
+                            src={Facebook}
+                            alt='Facebook'
+                        />
+                    </a>
+
                 </div>
             </div>
             <div className='copyright'>

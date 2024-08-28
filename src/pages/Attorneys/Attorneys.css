@@ -4,6 +4,7 @@
 
 /* Desktop */
 @media (min-width: 769px) {
+
     
     .attorneys hr {
         width: 1200px;
@@ -31,15 +32,13 @@
 
     .attorneys .how .intro p span {
         font-weight: 600;
-    };
-
+    }
 
     .attorneys .info {
         min-height: 510px;
-        margin-top: 0;
-
-        border: 1px navy dashed;
+        margin-bottom: 0;
     }
+    
 }
 
 
