@@ -85,7 +85,12 @@
         width: auto;
     }
 
+    .home .info {
+        min-height: 666px;
+    }
+
     .home .callout-box {
+        min-height: 666px;
         background-color: var(--navy);
     }
 
