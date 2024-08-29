@@ -1,6 +1,6 @@
 import React from 'react';
 import usePageNavigation from '../../hooks/usePageNavigation';
-import footerLinks from './FooterLinks';
+import socialLinks from './SocialLinks';
 import './Footer.css';
 import Logo from '../../assets/icons/logo-white.svg';
 import LinkedIn from '../../assets/icons/LinkedIn.svg';
@@ -38,7 +38,7 @@ const DesktopFooter = () => {
 
                 <div className='social'>
                     <a 
-                        href={footerLinks['LinkedIn']['url']} target='_blank' rel='noopener noreferrer'>
+                        href={socialLinks['LinkedIn']['url']} target='_blank' rel='noopener noreferrer'>
                         <img
                             src={LinkedIn}
                             alt='LinkedIn'
