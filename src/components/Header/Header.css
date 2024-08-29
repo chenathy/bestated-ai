@@ -30,6 +30,11 @@
     .navbar .logo {
         width: 152.14px;
         height: 30px; 
+        transition: transform 0.3s smooth;
+    }
+
+    .navbar .logo:hover {
+        transform: scale(1.1);
     }
 
     .navbar .ul {
@@ -72,6 +77,11 @@
         font-size: 18px; 
         font-weight: 600; 
         line-height: 25.2px;
+        transition: transform 0.3s smooth;
+    }
+
+    .navbar li a:hover, .navbar li span:hover {
+        transform: scale(1.1);
     }
 
 
