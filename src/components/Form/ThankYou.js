@@ -1,5 +1,5 @@
 import React from 'react';
-import footerLinks from '../Footer/FooterLinks';
+import socialLinks from '../Footer/SocialLinks';
 import LinkedInIcon from '../../assets/icons/LinkedIn.svg';
 import InstagramIcon from '../../assets/icons/Instagram.svg';
 import TikTokIcon from '../../assets/icons/TikTok.svg';
@@ -20,7 +20,7 @@ const ThankyouPageComponent = () => {
 
             <div className='social-icons'>
                 <a
-                    href={footerLinks['LinkedIn']['url']} target='_blank' rel='noopener noreferrer'>
+                    href={socialLinks['LinkedIn']['url']} target='_blank' rel='noopener noreferrer'>
                     <img
                         src={LinkedInIcon}
                         alt='LinkedIn'
