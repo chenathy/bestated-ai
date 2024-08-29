@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, RadioGroup, Radio, Input } from 'rsuite';
+import { Form, RadioGroup, Radio, Input, Notification, useToaster } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import Button from '../Button/Button';
 import './Form.css';
@@ -164,11 +164,27 @@ const FormComponent = ({ onFormComplete, ...props}) => {
         return errors.length === 0; 
     };
 
+    // Noticifation
+    const toaster = useToaster();
+    const showNotification = (type) => {
+        toaster.push(
+            <Notification 
+                type={type}
+                header={type === 'error' ? 'Error' : 'Success'}
+                closable
+            >
+                {type === 'error' ? 'An error occurred' : 'Your Form Info has been submitted successfully'}
+            </Notification>,
+            { placement: 'topCenter'}
+        );
+    };
+
     const handleSubmit = async() => {
         if (validateForm()){
             console.log(`formValue: ${JSON.stringify(formValue)}`); 
 
             onFormComplete(true);
+            showNotification('success');
 
             // // Saving Data throught API 
             // try {
@@ -192,9 +208,11 @@ const FormComponent = ({ onFormComplete, ...props}) => {
 
 
         } else {
-            console.log(`Missing Info `)
+            console.log(`Missing Info `);
+            showNotification('error');
         }
     } 
+
 
 
 
