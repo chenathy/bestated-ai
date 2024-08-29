@@ -103,6 +103,11 @@
         size: 18px;
         line-height: 25.2px;
         color: var(--navy);
+        transition: transform 0.3s smooth;
+    }
+
+    #link-learn-more:hover, #link-contact:hover {
+        transform: scale(1.1);
     }
 
 }
