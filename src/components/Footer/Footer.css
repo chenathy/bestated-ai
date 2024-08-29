@@ -30,6 +30,11 @@
         width: 154px;
         height: 30px;
         cursor: pointer;
+        transition: transform 0.3 ease;
+    }
+
+    .footer img:hover{
+        transform: scale(1.1);
     }
 
     .menu {
@@ -52,7 +57,11 @@
         line-height: 25.2px;
         margin-bottom: 20px;
         cursor: pointer;
+        transition: transform 0.3 ease;
+    }
 
+    .menu p:hover {
+        transform: scale(1.075);
     }
 
     .social {
