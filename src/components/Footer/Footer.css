@@ -56,16 +56,21 @@
     }
 
     .social {
-        width: 160px;
-        height: 26px;
+        width: 180px;
+        height: 28px;
         display: flex;
         align-items: center;
         justify-content: space-between; 
     }
 
     .social img {
-        width: 25px;
-        height: 25px;
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3 ease;
+    }
+
+    .social img:hover{
+        transform: scale(1.2);
     }
 
     .copyright {
