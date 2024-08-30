@@ -184,27 +184,35 @@ const FormComponent = ({ onFormComplete, ...props}) => {
             console.log(`formValue: ${JSON.stringify(formValue)}`); 
 
             onFormComplete(true);
-            showNotification('success');
 
-            // // Saving Data throught API 
-            // try {
-            //     const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}:${process.env.REACT_APP_BACKEND_PORT}/submit`, {
-            //         method: 'POST',
-            //         headers: {
-            //         'Content-Type': 'application/json',
-            //         },
-            //         body: JSON.stringify(formData),
-            //     });
+            // process.env.REACT_APP_BACKEND_URL
+            // process.env.REACT_APP_BACKEND_PORT
+
+            const REACT_APP_BACKEND_URL = 'https://18.222.183.97';
+            const REACT_APP_BACKEND_PORT = 432;
+
+            // Saving Data throught API 
+            try {
+                const response = await fetch(`${REACT_APP_BACKEND_URL}:${REACT_APP_BACKEND_PORT}/submit`, {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formValue),
+                });
     
-            //     if (response.ok) {
-            //         alert('Your Info has been submitted successfully!');
-            //     } else {
-            //         alert('Failed to submit data.');
-            //     }
-            // } catch (error) {
-            //     console.error('Error submitting data:', error);
-            //     alert('An error occurred while submitting data.');
-            // }
+                if (response.ok) {
+                    alert('Your Info has been submitted successfully!');
+
+                    showNotification('success');
+                } else {
+                    alert('Failed to submit data.');
+                }
+            } catch (error) {
+                console.error('Error submitting data:', error);
+                showNotification('error')
+                alert('An error occurred while submitting data.');
+            }
 
 
         } else {
