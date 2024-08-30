@@ -223,11 +223,10 @@ const FormComponent = ({ onFormComplete, ...props}) => {
 
             } finally {
                 setLoading(false);
-              }
+            }
 
         } else {
             console.log(`Missing Info `);
-            // showNotification('error');
         }
     } 
 
