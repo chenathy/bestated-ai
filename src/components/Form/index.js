@@ -183,13 +183,12 @@ const FormComponent = ({ onFormComplete, ...props}) => {
     const handleSubmit = async() => {
 
         if (validateForm()){
-            console.log(`formValue: ${JSON.stringify(formValue)}`); 
 
             // process.env.REACT_APP_BACKEND_URL
             // process.env.REACT_APP_BACKEND_PORT
 
             const REACT_APP_BACKEND_URL = 'https://api.bestated.ai';
-            const REACT_APP_BACKEND_PORT = 432;
+            const REACT_APP_BACKEND_PORT = 443;
 
             // Saving Data throught API 
             try {
