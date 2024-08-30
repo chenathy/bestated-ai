@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, RadioGroup, Radio, Input } from 'rsuite';
+import { Form, RadioGroup, Radio, Input, Notification, useToaster } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import Button from '../Button/Button';
 import './Form.css';
@@ -130,6 +130,7 @@ const FormComponent = ({ onFormComplete, ...props}) => {
         });
     };
 
+    const [loading, setLoading] = useState(false);
     const [hasErrors, setHasErrors] = useState(false);
     const [errorMessages, setErrorMessages] = useState([]);
 
@@ -164,37 +165,71 @@ const FormComponent = ({ onFormComplete, ...props}) => {
         return errors.length === 0; 
     };
 
+    // Noticifation
+    const toaster = useToaster();
+    const showNotification = (type) => {
+        toaster.push(
+            <Notification 
+                type={type}
+                header={type === 'error' ? 'Error' : 'Success'}
+                closable
+            >
+                {type === 'error' ? 'An error occurred' : 'Your Form Info has been submitted successfully'}
+            </Notification>,
+            { placement: 'topCenter'}
+        );
+    };
+
     const handleSubmit = async() => {
+
         if (validateForm()){
             console.log(`formValue: ${JSON.stringify(formValue)}`); 
 
-            onFormComplete(true);
+            // process.env.REACT_APP_BACKEND_URL
+            // process.env.REACT_APP_BACKEND_PORT
 
-            // // Saving Data throught API 
-            // try {
-            //     const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}:${process.env.REACT_APP_BACKEND_PORT}/submit`, {
-            //         method: 'POST',
-            //         headers: {
-            //         'Content-Type': 'application/json',
-            //         },
-            //         body: JSON.stringify(formData),
-            //     });
+            const REACT_APP_BACKEND_URL = 'https://api.bestated.ai';
+            const REACT_APP_BACKEND_PORT = 432;
+
+            // Saving Data throught API 
+            try {
+
+                setLoading(true);
+
+                const response = await fetch(`${REACT_APP_BACKEND_URL}:${REACT_APP_BACKEND_PORT}/submit`, {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formValue),
+                });
     
-            //     if (response.ok) {
-            //         alert('Your Info has been submitted successfully!');
-            //     } else {
-            //         alert('Failed to submit data.');
-            //     }
-            // } catch (error) {
-            //     console.error('Error submitting data:', error);
-            //     alert('An error occurred while submitting data.');
-            // }
+                if (response.ok) {
+                    // alert('Your Info has been submitted successfully!');
+                    showNotification('success');
+                    onFormComplete(true);
 
+                } else {
+
+                    // alert('Failed to submit data.');
+                    showNotification('error')
+
+                }
+            } catch (error) {
+
+                console.error('Error submitting data:', error);
+                showNotification('error')
+                // alert('An error occurred while submitting data.');
+
+            } finally {
+                setLoading(false);
+            }
 
         } else {
-            console.log(`Missing Info `)
+            console.log(`Missing Info `);
         }
     } 
+
 
 
 
@@ -312,7 +347,13 @@ const FormComponent = ({ onFormComplete, ...props}) => {
 
             </Form>
 
-        </div>
+            {loading && (
+                <div className="overlay">
+                    <div className="spinner"></div>
+                </div>
+            )}
+
+        </div> 
     );
 };
 
