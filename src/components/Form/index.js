@@ -188,7 +188,7 @@ const FormComponent = ({ onFormComplete, ...props}) => {
             // process.env.REACT_APP_BACKEND_URL
             // process.env.REACT_APP_BACKEND_PORT
 
-            const REACT_APP_BACKEND_URL = 'https://18.222.183.97';
+            const REACT_APP_BACKEND_URL = 'https://api.bestated.ai';
             const REACT_APP_BACKEND_PORT = 432;
 
             // Saving Data throught API 
@@ -220,7 +220,7 @@ const FormComponent = ({ onFormComplete, ...props}) => {
                 console.error('Error submitting data:', error);
                 showNotification('error')
                 // alert('An error occurred while submitting data.');
-                
+
             } finally {
                 setLoading(false);
               }
