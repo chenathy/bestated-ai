@@ -183,7 +183,6 @@ const FormComponent = ({ onFormComplete, ...props}) => {
     const handleSubmit = async() => {
 
         if (validateForm()){
-            console.log(`formValue: ${JSON.stringify(formValue)}`); 
 
             // process.env.REACT_APP_BACKEND_URL
             // process.env.REACT_APP_BACKEND_PORT
