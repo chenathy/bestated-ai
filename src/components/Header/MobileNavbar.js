@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // import HamburgerIcon from './HamburgerMenu';
 import logo from '../../assets/icons/logo-navy.svg';
@@ -9,6 +9,22 @@ const MobileNavbar = () => {
 
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && ! dropdownRef.current.contains(event.target)) {
+            setDropdownOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [])
+
 
     return (
         <div className='navbar-container'>
@@ -29,7 +45,7 @@ const MobileNavbar = () => {
                     <div className='line'></div>
                 </div>
                 {dropdownOpen && (
-                    <div className='dropdown'>
+                    <div className='dropdown' ref={dropdownRef}>
                         <ul>
                             <li onClick={() => setDropdownOpen(false)}><Link to='/employers'>Employers</Link></li>
                             <li onClick={() => setDropdownOpen(false)}><Link to='/professional-attorneys'>Attorneys</Link></li>
