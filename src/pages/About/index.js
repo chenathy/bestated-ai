@@ -6,6 +6,7 @@ import AboutLogo from '../../assets/images/about.jpg';
 import JamesHeadshot from '../../assets/images/James-headshot.jpeg';
 import TJHeadshot from '../../assets/images/TJ-headshot.jpeg';
 import NishaHeadshot from '../../assets/images/Nisha-headshot.jpg';
+import ChenHeadshot from '../../assets/images/Chen-headshot.png';
 import './About.css';
 
 
@@ -97,7 +98,7 @@ const About = () => {
 
                     <div className='member'>
                         <img
-                            src={TJHeadshot}
+                            src={ChenHeadshot}
                             alt='Technology Icon'
                         />
                         <a>Chen Yukai</a>
