@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../Button';
 import logo from '../../assets/icons/logo-navy.svg';
@@ -9,6 +9,23 @@ const DesktopNavbar = () => {
 
     const navigate = useNavigate();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // Function to handle clicks outside the dropdown
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setDropdownOpen(false);
+        }
+    };
+
+    // Attach event listener on mount and clean up on unmount
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <div className='navbar-container'>
@@ -46,7 +63,7 @@ const DesktopNavbar = () => {
             </nav>
 
             {dropdownOpen && (
-                <div className='navbar ul dropdown'>
+                <div className='navbar ul dropdown' ref={dropdownRef}>
                     <li onClick={() => setDropdownOpen(false)}><Link to='/professional-attorneys'><p>For Attorneys &gt;</p></Link></li>
                     <li onClick={() => setDropdownOpen(false)}><Link to='/professional-financialAdvisors'><p>For Financial Advisors &gt;</p></Link></li>
                 </div>
