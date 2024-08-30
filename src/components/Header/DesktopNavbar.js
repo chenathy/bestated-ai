@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from '../Button';
 import logo from '../../assets/icons/logo-navy.svg';
@@ -10,6 +10,23 @@ const DesktopNavbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // Function to handle clicks outside the dropdown
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setDropdownOpen(false);
+        }
+    };
+
+    // Attach event listener on mount and clean up on unmount
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     // Add underline for current session 
     const isActive = (path) => location.pathname === path;
@@ -58,7 +75,7 @@ const DesktopNavbar = () => {
             </nav>
 
             {dropdownOpen && (
-                <div className='navbar ul dropdown'>
+                <div className='navbar ul dropdown' ref={dropdownRef}>
                     <li onClick={() => setDropdownOpen(false)}><Link to='/professional-attorneys'><p>For Attorneys &gt;</p></Link></li>
                     <li onClick={() => setDropdownOpen(false)}><Link to='/professional-financialAdvisors'><p>For Financial Advisors &gt;</p></Link></li>
                 </div>
