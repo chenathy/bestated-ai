@@ -137,6 +137,11 @@
         box-shadow: 0px 16px 32px -4px #0C0C0D1A;
     }
 
+    .info .box .group {
+        display: grid;
+        gap: 8px;
+    }
+
     .info .box label {
         height: 20px;
         font-family: 'Public Sans', sans-serif;
