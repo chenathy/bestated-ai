@@ -130,6 +130,7 @@ const FormComponent = ({ onFormComplete, ...props}) => {
         });
     };
 
+    const [loading, setLoading] = useState(false);
     const [hasErrors, setHasErrors] = useState(false);
     const [errorMessages, setErrorMessages] = useState([]);
 
@@ -180,10 +181,9 @@ const FormComponent = ({ onFormComplete, ...props}) => {
     };
 
     const handleSubmit = async() => {
+
         if (validateForm()){
             console.log(`formValue: ${JSON.stringify(formValue)}`); 
-
-            onFormComplete(true);
 
             // process.env.REACT_APP_BACKEND_URL
             // process.env.REACT_APP_BACKEND_PORT
@@ -193,6 +193,9 @@ const FormComponent = ({ onFormComplete, ...props}) => {
 
             // Saving Data throught API 
             try {
+
+                setLoading(true);
+
                 const response = await fetch(`${REACT_APP_BACKEND_URL}:${REACT_APP_BACKEND_PORT}/submit`, {
                     method: 'POST',
                     headers: {
@@ -202,22 +205,29 @@ const FormComponent = ({ onFormComplete, ...props}) => {
                 });
     
                 if (response.ok) {
-                    alert('Your Info has been submitted successfully!');
-
+                    // alert('Your Info has been submitted successfully!');
                     showNotification('success');
+                    onFormComplete(true);
+
                 } else {
-                    alert('Failed to submit data.');
+
+                    // alert('Failed to submit data.');
+                    showNotification('error')
+
                 }
             } catch (error) {
+
                 console.error('Error submitting data:', error);
                 showNotification('error')
-                alert('An error occurred while submitting data.');
-            }
-
+                // alert('An error occurred while submitting data.');
+                
+            } finally {
+                setLoading(false);
+              }
 
         } else {
             console.log(`Missing Info `);
-            showNotification('error');
+            // showNotification('error');
         }
     } 
 
@@ -338,7 +348,13 @@ const FormComponent = ({ onFormComplete, ...props}) => {
 
             </Form>
 
-        </div>
+            {loading && (
+                <div className="overlay">
+                    <div className="spinner"></div>
+                </div>
+            )}
+
+        </div> 
     );
 };
 
