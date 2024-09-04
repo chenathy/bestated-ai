@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from '../Button';
-import logo from '../../assets/icons/logo-navy.svg';
+import logo from '../../assets/icons/logo-neon-green.svg';
 import './Header.css';
 
 const DesktopNavbar = () => {

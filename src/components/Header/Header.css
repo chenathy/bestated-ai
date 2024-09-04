@@ -6,7 +6,7 @@
 
 .navbar-container {
     width: 100vw;
-    background-color: var(--gray-10);
+    background: var(--purple-gradient);
 }
 
 /* Desktop styles */
@@ -18,7 +18,8 @@
     }
 
     .navbar {
-        background-color: var(--gray-10);
+        
+        background: var(--purple-gradient);
         display: flex;
         align-items: center; 
         position: relative;
@@ -67,7 +68,7 @@
         height: 26;
         width: auto;
         display: block;
-        color: var(--navy);
+        color: var(--neon-green);
         text-align: left; 
         padding: 14px 20px;
         text-decoration: none;
