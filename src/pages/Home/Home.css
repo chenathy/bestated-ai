@@ -1,6 +1,6 @@
 
 .home {
-    background-color: #F5F5F5;
+    background: var(--purple-gradient);
 }
 
 /* Desktop */
@@ -38,7 +38,7 @@
         font-size: 56px;
         font-weight: 600;
         line-height: 63px;
-        color: var(--navy);
+        color: var(--neon-green);
         margin: 0;
     }
 
@@ -51,7 +51,7 @@
         line-height: 25.2px;
         text-align: center;
         justify-content: center;
-        color: var(--black);
+        color: var(--neon-green);
         margin: 0;
     }
 
@@ -91,7 +91,7 @@
 
     .home .callout-box {
         min-height: 666px;
-        background-color: var(--navy);
+        background: var(--electric-purple);
     }
 
 

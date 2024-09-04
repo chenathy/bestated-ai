@@ -25,7 +25,7 @@
         font-weight: 600;
         line-height: 63px;
         text-align: left;
-        color: var(--navy); 
+        color: var(--magenta-purple); 
         margin: 0;
     }
 
@@ -36,7 +36,7 @@
         font-weight: 400;
         font-size: 28px;
         line-height: 39.2px;
-        color: var(--navy);
+        color: var(--neon-green);
         margin: 0;
     }
 
@@ -56,11 +56,12 @@
         font-weight: 400;
         line-height: 33.6px;
         text-align: left;
-        color: var(--navy);
+        color: var(--neon-green);
     }
 
     .hero .text-and-btn span {
         font-weight: 600;
+        color: var(--pink);
         text-decoration: underline;
     }
 

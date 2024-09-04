@@ -54,8 +54,20 @@ body, html {
     --mutedLight-gray: #E5E5E5;
     --veryLight-gray: #F0F2F5;
 
+    /* Detailed Pinks */
+    --neon-pink: #FF007F;
+    --hot-pink: #FF69B4;
+    --fuchsia: #FF00FF;
+    --deep-pink: #FF1493;
+
+    /* Detailed purple */
     --light-purple: #8E2DE2;
     --dark-purple: #4A00E0;
+    --electric-purple: #8A2BE2;
+    --neon-purple: #9D00FF;
+    --vivid-violet: #9400D3;
+    --magenta-purple: #FF00FF;
+
 
 }
 
