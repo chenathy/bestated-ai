@@ -30,6 +30,33 @@ body, html {
     --black: #141414;
     --white: #FFFFFF;
 
+    
+    --teal: #009688; /* subtle AI-themed color. */
+    --bright-green: #00FF00; /*  like the matrix theme */
+    --neon-green: #00FFAB; /* common in futuristic AI designs. */
+    --cyan: #00E5FF; /*  often used for links or accents. */
+    --pink: #FF4081; /* used sparingly as accent highlights. */
+    --amber: #FFC107; /* for warning messages or calls to action. */
+
+
+    --purple-gradient: linear-gradient(300deg, #8E2DE2, #4A00E0);
+    --dark-light-grayish-gradient: linear-gradient(135deg, #1F1C2C, #928DAB);
+    --bright-blue-gradient: linear-gradient(135deg, #00C6FF, #0072FF);
+    --blue-gradient: linear-gradient(135deg, #2F80ED, #56CCF2);
+    --green-gradient: linear-gradient(135deg, var(--bright-green), var(--cyan));
+
+    /* Dark Background */
+    --dary-gray:  #121212;
+    --blackish-gray: #1A1A1A;
+    --soft-black: #202020;
+    --dark-slate-gray: #2C2F33;
+    --almost-black: #181818;
+    --mutedLight-gray: #E5E5E5;
+    --veryLight-gray: #F0F2F5;
+
+    --light-purple: #8E2DE2;
+    --dark-purple: #4A00E0;
+
 }
 
 

@@ -6,9 +6,12 @@ import CalloutBox from '../../components/Callout';
 import TextAndBtn from '../../components/Text-and-Btn';
 import CTAComponent from '../../components/CTA';
 
-import homeHero from '../../assets/images/home-hero.jpg';
-import homeCallout from '../../assets/images/home-callout.jpg';
-import homeBenefitAPI from '../../assets/images/home-api.jpg'; 
+// import homeHero from '../../assets/images/home-hero.jpg';
+import homeHero from '../../assets/ai/home-hero.jpg';
+// import homeCallout from '../../assets/images/home-callout.jpg';
+import homeCallout from '../../assets/ai/home-callout.jpg';
+// import homeBenefitAPI from '../../assets/images/home-api.jpg'; 
+import homeBenefitAPI from '../../assets/ai/home-api.jpg';
 import './Home.css';
 
 

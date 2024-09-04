@@ -4,8 +4,10 @@ import HeroComponent from '../../components/Hero';
 import HowComponent from '../../components/How';
 import CTAComponent from '../../components/CTA';
 
-import financialAdvisorHero from '../../assets/images/financialAdvisors-hero.jpg';
-import financialAdvisorHow from '../../assets/images/financialAdvisors-how.jpg';
+// import financialAdvisorHero from '../../assets/images/financialAdvisors-hero.jpg';
+import financialAdvisorHero from '../../assets/ai/financial-hero.jpg';
+// import financialAdvisorHow from '../../assets/images/financialAdvisors-how.jpg';
+import financialAdvisorHow from '../../assets/ai/financial-info.png';
 import './FinancialAdvisors.css';
 
 

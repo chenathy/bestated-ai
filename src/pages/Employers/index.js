@@ -5,9 +5,12 @@ import HowComponent from '../../components/How';
 import CalloutBox from '../../components/Callout';
 import CTAComponent from '../../components/CTA';
 
-import employersHero from '../../assets/images/employers-hero.jpg';
-import employersHow from '../../assets/images/employers-how.jpg';
-import employersCallout from '../../assets/images/employers-callout.png';
+// import employersHero from '../../assets/images/employers-hero.jpg';
+import employersHero from '../../assets/ai/employer-hero.png';
+// import employersHow from '../../assets/images/employers-how.jpg';
+import employersHow from '../../assets/ai/employer-how.jpg';
+// import employersCallout from '../../assets/images/employers-callout.png';
+import employersCallout from '../../assets/ai/employer-callout.jpg';
 import AttractIcon from '../../assets/icons/Attract.svg';
 import LoyaltyIcon from '../../assets/icons/Loyalty.svg';
 import ProductivityIcon from '../../assets/icons/Productivity.svg';

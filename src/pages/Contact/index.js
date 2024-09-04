@@ -3,7 +3,8 @@ import HeroComponent from '../../components/Hero';
 import FormComponent from '../../components/Form';
 import ThankyouPageComponent from '../../components/Form/ThankYou';
 
-import ContactHero from '../../assets/images/contact-hero.jpg';
+// import ContactHero from '../../assets/images/contact-hero.jpg';
+import ContactHero from '../../assets/ai/contact-hero.jpg';
 import './Contact.css';
 
 

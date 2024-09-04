@@ -5,8 +5,10 @@ import HowComponent from '../../components/How';
 import InfoBoxes from '../../components/InfoBoxes';
 import CTAComponent from '../../components/CTA';
 
-import AttorneysHero from '../../assets/images/attorneys-hero.jpg';
-import AttorneysHow from '../../assets/images/attorneys-how.jpg';
+// import AttorneysHero from '../../assets/images/attorneys-hero.jpg';
+import AttorneysHero from '../../assets/ai/attorney-hero.jpg';
+// import AttorneysHow from '../../assets/images/attorneys-how.jpg';
+import AttorneysHow from '../../assets/ai/attorney-how.jpg';
 import './Attorneys.css';
 
 
